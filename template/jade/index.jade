@@ -4,19 +4,52 @@ html(lang="en-us")
     title KooKoo Grill
     meta(http-equiv="X-US-Compatible" content="IE=Edge")
     meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     //- JQUERY
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js")
-    //- FOUNDATION
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js")
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.css")
+    //- BOOTSTRAP
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
-    //-- IONICONS
-    link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet")
+    //-- FONT AWESOME
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
     //-- GOOGLE FONTS
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Lora:400,700' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,500,900' rel='stylesheet' type='text/css')
     //- CSS
     link(rel="stylesheet" href="public/css/default.css")
   body
+    div.container.nav-container
+      div.row
+        div.col-md-12
+          nav.nav
+            a(href="#" class="nav-links") MENU
+            a(href="#" class="nav-links") ABOUT US
+            a(href="#" class="nav-logo") KOOKOO GRILL
+            a(href="#" class="nav-links") LOCATIONS
+            a(href="#" class="nav-links") OUR TEAM
+    div.container.fold-container
+      div.row
+        div.col-md-10.col-md-offset-1  
+    div.container.content-container
+      div.row
+        div.col-md-4
+          div.content-box
+        div.col-md-4
+          div.content-box
+        div.col-md-4
+          div.content-box
+    footer.container.footer
+      div.row
+        div.col-sm-6.col-sm-offset-3
+          div.social
+            a(href="https://twitter.com/kookoogrill" target="_blank")
+              i(class="fa fa-twitter social-icons" aria-hidden="true")
+            a(href="https://www.facebook.com/KooKooGrill/" target="_blank")                
+              i(class="fa fa-facebook social-icons" aria-hidden="true")
+            a(href="https://www.instagram.com/kookoogrill/" target="_blank")
+              i(class="fa fa-instagram social-icons" aria-hidden="true")
+            a(href="http://www.yelp.com/biz/kookoo-grill-teriyaki-bellflower" target="_blank")
+              i(class="fa fa-yelp social-icons" aria-hidden="true")
+
     script(src="public/js/main.js")
 

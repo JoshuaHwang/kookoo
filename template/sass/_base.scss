@@ -1,34 +1,38 @@
 //-- COLORS
 // Solids
-$red:       #F35D66;
+$red:       #F63654;
 $blue:      #36B8D5;
 $black:     #020202;
 $white:     #FDF9FD;
 $gray:      #AFAFAF;
 $lightGray: #FAFAFA;
 $darkGray:  #655D59;
+$twitBlue:  #55ACEE;
+$twitHov:   #7CC0F4;
+$fbBlue:    #3B5998;
+$fbHov:     #5772AC;
+$instaG:    #6DC993;
+$instaHov:  #9BE1B7;
+$yelpRed:   #C41200;
+$yelpHov:   #F5250F;
 
 // Gradients
 
 //-- FONTS
-// Family
-$lato:     'Lato', sans-serif;
-$lora:     'Lora', sans-serif;
-
 // Size
 $hookSize:  70px;
 $bigHeader: 46px;
 $header:    36px;
 $logo:      25px;
 $paragraph: 16px;
-$navLink:   18px;
-$jobFont:   14px;
+$navLink:   14px;
 
 // Weight
+$skinny: 100;
 $thin:   300;
 $normal: 400;
-$chubby: 700;
-$fat:    900;
+$chubby: 500;
+$fat:    700;
 
 // Spacing
 $one:     1px;
@@ -57,6 +61,6 @@ $hookMar: 155px;
 $navPad: 150px;
 
 html, body {
-  font-family: 'Lato', sans-serif;
-  background-color: $lightGray;
+  font-family: 'Roboto', sans-serif;
+  // background-color: $lightGray;
 }
