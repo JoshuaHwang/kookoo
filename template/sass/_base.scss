@@ -1,0 +1,62 @@
+//-- COLORS
+// Solids
+$red:       #F35D66;
+$blue:      #36B8D5;
+$black:     #020202;
+$white:     #FDF9FD;
+$gray:      #AFAFAF;
+$lightGray: #FAFAFA;
+$darkGray:  #655D59;
+
+// Gradients
+
+//-- FONTS
+// Family
+$lato:     'Lato', sans-serif;
+$lora:     'Lora', sans-serif;
+
+// Size
+$hookSize:  70px;
+$bigHeader: 46px;
+$header:    36px;
+$logo:      25px;
+$paragraph: 16px;
+$navLink:   18px;
+$jobFont:   14px;
+
+// Weight
+$thin:   300;
+$normal: 400;
+$chubby: 700;
+$fat:    900;
+
+// Spacing
+$one:     1px;
+$linkGap: 2px;
+$gap:     3px;
+
+//-- MARGINS
+$five:    5px;
+$ten:     10px;
+$fifteen: 15px;
+$logoMar: 25px;
+$thirty:  30px;
+$forty:   40px;
+$fifty:   50px;
+$content: 130px;
+$hookMar: 155px;
+
+@mixin auto {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+}
+
+//-- PADDING
+$navPad: 150px;
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  background-color: $lightGray;
+}
