@@ -155,7 +155,7 @@
 
   .content-container {
     width: 100%;
-    margin-top: 50px;
+    margin-top: $content;
 
     .content-box {
       width: 100%;
@@ -163,15 +163,65 @@
       background-color: $red;
       margin-bottom: 20px;
     }
-  }  
+  }
 
-  .footer {
-    margin-top: 50px;
-    margin-bottom: 100px;
+  .mailing-container {
+    width: 100%;
+    height: 300px;
+    background-color: $lightGray;
+    text-align: center;
+    margin-top: $fifteen;    
+
+    .join-us {      
+      font-weight: $fat;
+      letter-spacing: 1px;
+      margin-top: $content;
+    }
+
+    .deal {
+      font-weight: $thin;
+      letter-spacing: 1px;
+    }
+
+    .input-group {
+      margin-top: $forty;
+      margin-left: auto;
+      margin-right: auto;      
+    }
+
+    .email {
+      height: 50px;
+      width: 450px;
+      font-weight: $normal;      
+      padding-top: 0px;
+      padding-left: $ten;
+    }
+
+    .join-btn {
+      height: 50px;
+      width: 115px;
+      background-color: $red;
+      color: $white;
+      letter-spacing: 2px;
+      margin-left: $five;
+      border: none;
+    }
+  }
+
+  .social-container {
+    text-align: center;
+    margin-top: $content;
+
+    .follow-us {
+      font-size: $paragraph;
+      font-weight: $thin;
+      letter-spacing: 1px;
+    }  
 
     .social {
       display: flex;
       justify-content: space-around;
+      margin-top: $forty;
     }
 
     .social-icons {
@@ -220,5 +270,12 @@
     .fa-yelp:hover {
       background-color: $yelpHov;
     }
+  }
+
+  .footer {
+    width: 100%;
+    height: 400px;
+    background-color: $footBlack;
+    margin-top: $content;    
   }
 }

@@ -3,6 +3,7 @@
 $red:       #F63654;
 $blue:      #36B8D5;
 $black:     #020202;
+$footBlack: #1D1D1D;
 $white:     #FDF9FD;
 $gray:      #AFAFAF;
 $lightGray: #FAFAFA;
@@ -47,7 +48,7 @@ $logoMar: 25px;
 $thirty:  30px;
 $forty:   40px;
 $fifty:   50px;
-$content: 130px;
+$content: 75px;
 $hookMar: 155px;
 
 @mixin auto {
@@ -59,6 +60,10 @@ $hookMar: 155px;
 
 //-- PADDING
 $navPad: 150px;
+
+*:focus {
+  outline: none;
+}
 
 html, body {
   font-family: 'Roboto', sans-serif;

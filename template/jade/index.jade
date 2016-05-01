@@ -38,9 +38,18 @@ html(lang="en-us")
           div.content-box
         div.col-md-4
           div.content-box
-    footer.container.footer
+    div.container.mailing-container
+      div.row
+        div.col-md-10.col-md-offset-1
+          h2.join-us JOIN OUR MAILING LIST
+          p.deal OUR LATEST NEWS, DEALS, EVENTS, SENT DIRECTLY TO YOU
+          div.input-group
+            input(type="email" class="email" placeholder="Enter your email address")
+            button(type="button" class="join-btn") JOIN →          
+    div.container.social-container
       div.row
         div.col-sm-6.col-sm-offset-3
+          h3.follow-us WE'D LOVE TO STAY CONNECTED:
           div.social
             a(href="https://twitter.com/kookoogrill" target="_blank")
               i(class="fa fa-twitter social-icons" aria-hidden="true")
@@ -50,6 +59,7 @@ html(lang="en-us")
               i(class="fa fa-instagram social-icons" aria-hidden="true")
             a(href="http://www.yelp.com/biz/kookoo-grill-teriyaki-bellflower" target="_blank")
               i(class="fa fa-yelp social-icons" aria-hidden="true")
-
+    footer.container.footer
+      div.row
     script(src="public/js/main.js")
 
