@@ -26,7 +26,7 @@ html, body {
       transition: all 0.2s ease; }
     .nav-container .nav-logo {
       color: #F63654;
-      font-size: 25px;
+      font-size: 30px;
       font-weight: 700;
       margin-top: 20px; }
   .fold-container {
@@ -53,7 +53,7 @@ html, body {
       height: 70px;
       text-align: center;
       vertical-align: middle;
-      font-size: 25px;
+      font-size: 30px;
       border-radius: 50%;
       padding: 23px; }
     .footer .fa-twitter {
@@ -79,7 +79,9 @@ html, body {
 
 @media (min-width: 668px) {
   .nav-container {
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25); }
     .nav-container .nav {
       text-align: center;
       display: flex;
@@ -92,27 +94,38 @@ html, body {
     .nav-container .nav-links {
       font-size: 14px;
       font-weight: 300;
-      margin-top: 25px; }
+      margin-top: 30px; }
     .nav-container .nav-links:hover {
       color: #F63654;
       transition: all 0.2s ease; }
     .nav-container .nav-logo {
       color: #F63654;
-      font-size: 25px;
+      font-size: 30px;
       font-weight: 700;
       margin-top: 20px; }
   .fold-container {
     background-color: #FAFAFA;
     height: 600px;
-    width: 100%; }
-  .content-container {
     width: 100%;
-    margin-top: 75px; }
-    .content-container .content-box {
-      width: 100%;
+    text-align: center; }
+    .fold-container .opening-soon {
+      font-size: 60px;
+      font-weight: 700;
+      text-shadow: -2px 2px #F63654;
+      margin-top: 155px; }
+    .fold-container .fa-angle-double-down {
+      font-size: 36px;
+      margin-top: 155px; }
+  #content-container {
+    width: 100%;
+    margin-top: 30px; }
+    #content-container .content-box {
+      max-width: 550px;
       height: 300px;
       background-color: #F63654;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-right: auto;
+      margin-left: auto; }
   .mailing-container {
     width: 100%;
     height: 300px;
@@ -133,20 +146,24 @@ html, body {
     .mailing-container .email {
       height: 50px;
       width: 450px;
-      font-weight: 400;
-      padding-top: 0px;
+      color: #020202;
+      font-weight: 300;
+      letter-spacing: 1px;
       padding-left: 10px; }
     .mailing-container .join-btn {
       height: 50px;
       width: 115px;
       background-color: #F63654;
       color: #FDF9FD;
+      font-size: 17px;
       letter-spacing: 2px;
       margin-left: 5px;
       border: none; }
+    .mailing-container .join-btn:hover {
+      background-color: #F85C75; }
   .social-container {
     text-align: center;
-    margin-top: 75px; }
+    margin-top: 50px; }
     .social-container .follow-us {
       font-size: 16px;
       font-weight: 300;
@@ -161,9 +178,9 @@ html, body {
       height: 70px;
       text-align: center;
       vertical-align: middle;
-      font-size: 25px;
+      font-size: 30px;
       border-radius: 50%;
-      padding: 23px; }
+      padding: 21px; }
     .social-container .fa-twitter {
       background-color: #55ACEE;
       color: #FDF9FD; }
@@ -184,8 +201,15 @@ html, body {
       color: #FDF9FD; }
     .social-container .fa-yelp:hover {
       background-color: #F5250F; }
+  .map-container {
+    width: 100%;
+    margin-top: 75px; }
+    .map-container #map {
+      width: 50%;
+      height: 300px;
+      background-color: #CCC; }
   .footer {
     width: 100%;
-    height: 400px;
+    height: 100px;
     background-color: #1D1D1D;
     margin-top: 75px; } }

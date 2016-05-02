@@ -30,7 +30,9 @@ html(lang="en-us")
     div.container.fold-container
       div.row
         div.col-md-10.col-md-offset-1  
-    div.container.content-container
+          h1.opening-soon OPENING SOON IN ANAHEIM!
+          i(class="fa fa-angle-double-down" aria-hidden="true")
+    div.container#content-container
       div.row
         div.col-md-4
           div.content-box
@@ -38,14 +40,15 @@ html(lang="en-us")
           div.content-box
         div.col-md-4
           div.content-box
+    //- 202 West Lincoln, Anaheim, CA 92805
     div.container.mailing-container
       div.row
         div.col-md-10.col-md-offset-1
           h2.join-us JOIN OUR MAILING LIST
-          p.deal OUR LATEST NEWS, DEALS, EVENTS, SENT DIRECTLY TO YOU
-          div.input-group
+          p.deal OUR LATEST NEWS, DEALS, AND EVENTS SENT DIRECTLY TO YOU
+          form.input-group
             input(type="email" class="email" placeholder="Enter your email address")
-            button(type="button" class="join-btn") JOIN →          
+            button(type="submit" class="join-btn") JOIN →          
     div.container.social-container
       div.row
         div.col-sm-6.col-sm-offset-3
@@ -59,7 +62,11 @@ html(lang="en-us")
               i(class="fa fa-instagram social-icons" aria-hidden="true")
             a(href="http://www.yelp.com/biz/kookoo-grill-teriyaki-bellflower" target="_blank")
               i(class="fa fa-yelp social-icons" aria-hidden="true")
+    div.container.map-container
+      div.row
+        div#map
     footer.container.footer
       div.row
-    script(src="public/js/main.js")
+    script(src="public/main.js")
+    script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer)
 
