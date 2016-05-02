@@ -113,9 +113,16 @@ html, body {
       font-weight: 700;
       text-shadow: -2px 2px #F63654;
       margin-top: 155px; }
-    .fold-container .fa-angle-double-down {
+    .fold-container .stay-tuned {
+      font-size: 17px;
+      font-weight: 300;
+      margin-top: 30px; }
+    .fold-container #scroll {
       font-size: 36px;
       margin-top: 155px; }
+    .fold-container #scroll:hover {
+      color: #AFAFAF;
+      cursor: pointer; }
   #content-container {
     width: 100%;
     margin-top: 30px; }
@@ -165,7 +172,7 @@ html, body {
     text-align: center;
     margin-top: 50px; }
     .social-container .follow-us {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 300;
       letter-spacing: 1px; }
     .social-container .social {
@@ -203,13 +210,36 @@ html, body {
       background-color: #F5250F; }
   .map-container {
     width: 100%;
+    height: 300px;
+    background-color: #FAFAFA;
+    text-align: center;
     margin-top: 75px; }
     .map-container #map {
       width: 50%;
       height: 300px;
+      display: inline-block;
       background-color: #CCC; }
+    .map-container .location {
+      width: 50%;
+      height: auto;
+      display: inline-block;
+      vertical-align: top; }
+    .map-container .our-location,
+    .map-container .our-hours {
+      color: #F63654;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-top: 50px; }
+    .map-container .days {
+      font-weight: 500; }
+    .map-container .sunday {
+      margin-right: 20px; }
+    .map-container .address,
+    .map-container .hours {
+      font-size: 16px;
+      font-weight: 300; }
   .footer {
     width: 100%;
     height: 100px;
-    background-color: #1D1D1D;
-    margin-top: 75px; } }
+    background-color: #1D1D1D; } }

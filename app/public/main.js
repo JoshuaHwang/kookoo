@@ -13,3 +13,25 @@ function initMap() {
     title: 'KooKoo Grill'
   });
 }
+
+var scroll   = document.getElementById('scroll');
+var locate = document.getElementById('location');
+
+scroll.addEventListener('click', scrollDown);
+locate.addEventListener('click', scrollLocation);
+
+function scrollDown(e) {
+  e.preventDefault;
+
+  $('html, body').animate({
+      scrollTop: $('#content-container').offset().top
+  }, 1000);
+}
+
+function scrollLocation(e) {
+  e.preventDefault;
+  
+  $('html, body').animate({
+      scrollTop: $('#map').offset().top
+  }, 1000);
+}

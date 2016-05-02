@@ -162,9 +162,20 @@
       margin-top: $hookMar;      
     }
 
-    .fa-angle-double-down {
+    .stay-tuned {
+      font-size: $label;
+      font-weight: $thin;
+      margin-top: $thirty;      
+    }
+
+    #scroll {
       font-size: $header;
       margin-top: $hookMar;
+    }
+
+    #scroll:hover {
+      color: $gray;
+      cursor: pointer;
     }
   }
 
@@ -237,7 +248,7 @@
     margin-top: $fifty;
 
     .follow-us {
-      font-size: $paragraph;
+      font-size: $connected;
       font-weight: $thin;
       letter-spacing: 1px;
     }  
@@ -298,19 +309,52 @@
 
   .map-container {
     width: 100%;
-    margin-top: $content;
+    height: 300px;
+    background-color: $lightGray;
+    text-align: center;
+    margin-top: $content;  
 
     #map {
       width: 50%;
       height: 300px;
+      display: inline-block;
       background-color: #CCC;
+    }
+
+    .location {
+      width: 50%;
+      height: auto;
+      display: inline-block;      
+      vertical-align: top;
+    }
+
+    .our-location,
+    .our-hours {
+      color: $red;
+      font-size: $logo;
+      font-weight: $fat;
+      letter-spacing: 1px;
+      margin-top: $fifty;   
+    }
+
+    .days {
+      font-weight: $chubby;    
+    }
+
+    .sunday {
+      margin-right: 20px;
+    }
+
+    .address,
+    .hours {
+      font-size: $paragraph;
+      font-weight: $thin;      
     }
   }
 
   .footer {
     width: 100%;
     height: 100px;
-    background-color: $footBlack;
-    margin-top: $content;    
+    background-color: $footBlack;   
   }
 }

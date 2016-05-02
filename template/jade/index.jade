@@ -25,13 +25,14 @@ html(lang="en-us")
             a(href="#" class="nav-links") MENU
             a(href="#" class="nav-links") ABOUT US
             a(href="#" class="nav-logo") KOOKOO GRILL
-            a(href="#" class="nav-links") LOCATIONS
+            a(href="#" id="location" class="nav-links") LOCATION
             a(href="#" class="nav-links") OUR TEAM
     div.container.fold-container
       div.row
         div.col-md-10.col-md-offset-1  
           h1.opening-soon OPENING SOON IN ANAHEIM!
-          i(class="fa fa-angle-double-down" aria-hidden="true")
+          p.stay-tuned STAY TUNED FOR UPDATES ON OUR OPENING
+          i(id="scroll" class="fa fa-angle-double-down" aria-hidden="true")
     div.container#content-container
       div.row
         div.col-md-4
@@ -39,8 +40,7 @@ html(lang="en-us")
         div.col-md-4
           div.content-box
         div.col-md-4
-          div.content-box
-    //- 202 West Lincoln, Anaheim, CA 92805
+          div.content-box    
     div.container.mailing-container
       div.row
         div.col-md-10.col-md-offset-1
@@ -52,7 +52,7 @@ html(lang="en-us")
     div.container.social-container
       div.row
         div.col-sm-6.col-sm-offset-3
-          h3.follow-us WE'D LOVE TO STAY CONNECTED:
+          h2.follow-us WE'D LOVE TO STAY CONNECTED:
           div.social
             a(href="https://twitter.com/kookoogrill" target="_blank")
               i(class="fa fa-twitter social-icons" aria-hidden="true")
@@ -65,8 +65,15 @@ html(lang="en-us")
     div.container.map-container
       div.row
         div#map
+        div.location
+          h2.our-location OUR LOCATION:
+          p.address 202 West Lincoln, Anaheim, CA 92805
+          h2.our-hours OUR HOURS:
+          p.hours #[span.days MON - SAT:] 10:00AM - 9:00PM
+          P.hours #[span.days.sunday SUNDAY:] 11:00AM - 9:00PM
     footer.container.footer
       div.row
+        div.col-md-4
+          p.copyright 
     script(src="public/main.js")
     script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer)
-
