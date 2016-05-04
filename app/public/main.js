@@ -25,7 +25,7 @@ function scrollDown(e) {
 
   $('html, body').animate({
       scrollTop: $('#content-container').offset().top
-  }, 1000);
+  }, 750);
 }
 
 function scrollLocation(e) {

@@ -1,116 +1,5 @@
 @import 'base';
-
-@media(max-width: 667px) {
-  .nav-container {  
-    width: 100%;    
-
-    .nav {
-      text-align: center;  
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 15px;
-    }
-
-    .nav-links,
-    .nav-logo {
-      color: $black;
-      text-decoration: none;
-    }
-    .nav-links {
-      display: none;
-      font-size: $navLink;
-      font-weight: $normal;
-      margin-top: 25px;       
-    }
-
-    .nav-links:hover {
-      color: $gray;
-      transition: all 0.2s ease;
-    }
-
-    .nav-logo {
-      color: $red;
-      font-size: $logo;
-      font-weight: $fat;
-      margin-top: 20px;
-    }
-  }
-
-  .fold-container {
-    background-color: $lightGray;
-    height: 600px;
-    width: 100%;  
-  }
-
-  .content-container {  
-    width: 100%;
-    margin-top: 30px;
-
-    .content-box {
-      width: 100%;
-      height: 300px;
-      background-color: $red;
-      margin-bottom: 20px;
-    }
-  }
-
-  .footer {
-    margin-top: 30px;
-    margin-bottom: 100px;
-
-    .social {
-      display: flex;
-      justify-content: space-around;
-    }
-
-    .social-icons {
-      color: black;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: $logo;            
-      border-radius: 50%;
-      padding: 23px;
-    }
-
-    .fa-twitter {
-      background-color: $twitBlue;
-      color: $white;
-    }
-
-    .fa-twitter:hover {
-      background-color: $twitHov;
-    }    
-
-    .fa-facebook {
-      background-color: $fbBlue;
-      color: $white;
-    }
-
-    .fa-facebook:hover {
-      background-color: $fbHov;
-    }
-
-    .fa-instagram {
-      background-color: $instaG;
-      color: $white;
-    }
-
-    .fa-instagram:hover {
-      background-color: $instaHov;
-    }
-
-    .fa-yelp {
-      background-color: $yelpRed;
-      color: $white;
-    }
-
-    .fa-yelp:hover {
-      background-color: $yelpHov;
-    }
-  }
-}
+@import 'mobile';
 
 @media(min-width: 668px) {
   .nav-container {  
@@ -133,12 +22,13 @@
     .nav-links {
       font-size: $navLink;
       font-weight: $thin;
-      margin-top: 30px; 
+      letter-spacing: 2px;
+      margin-top: 32px; 
     }
 
     .nav-links:hover {
       color: $red;
-      transition: all 0.2s ease;
+      // transition: all 0.2s ease;
     }
 
     .nav-logo {
@@ -148,6 +38,8 @@
       margin-top: 20px;
     }
   }
+
+  //-- HOME CSS
 
   .fold-container {
     background-color: $lightGray;
@@ -352,6 +244,21 @@
     }
   }
 
+  //-- MENU CSS
+  .catering-container {
+    width: 100%;
+    height: 55px;
+    background-color: $red;
+    color: $white;
+    font-size: 18px;
+    font-weight: $thin;
+    letter-spacing: 1px;
+    margin-top: 1px;
+    padding-top: $fifteen;
+    text-align: center;
+  }
+
+  //-- FOOTER CSS
   .footer {
     width: 100%;
     height: 100px;
