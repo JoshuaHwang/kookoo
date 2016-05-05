@@ -24,7 +24,7 @@ html(lang="en-us")
           nav.nav
             a(href="menu" class="nav-links") MENU
             a(href="#" class="nav-links") ABOUT US
-            a(href="#" class="nav-logo") KOOKOO GRILL
+            a(href="#" id="logo" class="regular") KOOKOO GRILL
             a(href="#" id="location" class="nav-links") LOCATION
             a(href="#" class="nav-links") OUR TEAM
     div.container.fold-container
@@ -44,13 +44,14 @@ html(lang="en-us")
     div.container.about-container
       div.row
         div.col-md-8.col-md-offset-2
+          h2.about-us OUR STORY
       div.row
         div.col-md-6
         div.col-md-6
     div.container.mailing-container
       div.row
         div.col-md-10.col-md-offset-1
-          h2.join-us JOIN OUR MAILING LIST
+          h3.join-us JOIN OUR MAILING LIST
           p.deal OUR LATEST NEWS, DEALS, AND EVENTS SENT DIRECTLY TO YOU
           form.input-group
             input(type="email" class="email" placeholder="Enter your email address")
@@ -58,7 +59,7 @@ html(lang="en-us")
     div.container.social-container
       div.row
         div.col-sm-6.col-sm-offset-3
-          h2.follow-us WE'D LOVE TO STAY CONNECTED:
+          h4.follow-us WE'D LOVE TO STAY CONNECTED:
           div.social
             a(href="https://twitter.com/kookoogrill" target="_blank")
               i(class="fa fa-twitter social-icons" aria-hidden="true")
@@ -72,9 +73,9 @@ html(lang="en-us")
       div.row
         div#map
         div.location
-          h2.our-location OUR LOCATION:
+          h5.our-location OUR LOCATION:
           p.address 202 West Lincoln, Anaheim, CA 92805
-          h2.our-hours OUR HOURS:
+          h5.our-hours OUR HOURS:
           p.hours #[span.days MON - SAT:] 10:00AM - 9:00PM
           P.hours #[span.days.sunday SUNDAY:] 11:00AM - 9:00PM
     footer.container.footer

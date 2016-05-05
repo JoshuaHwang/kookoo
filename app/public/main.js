@@ -1,3 +1,4 @@
+// GOOGLE MAP INTEGRATION
 function initMap() {
   var mapDiv  = document.getElementById('map');
   var latLong = { lat: 33.835755, lng: -117.916293 }
@@ -14,7 +15,19 @@ function initMap() {
   });
 }
 
-var scroll   = document.getElementById('scroll');
+// ON SCROLL REDUCE LOGO SIZE
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 450) {
+        $('#logo').addClass('smaller');
+
+    } else {
+        $('#logo').removeClass('smaller');
+    }
+});
+
+var scroll = document.getElementById('scroll');
 var locate = document.getElementById('location');
 
 scroll.addEventListener('click', scrollDown);
