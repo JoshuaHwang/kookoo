@@ -1,7 +1,7 @@
 doctype html
 html(lang="en-us")
   head
-    title KooKoo Grill
+    title Menu | KooKoo Grill
     meta(http-equiv="X-US-Compatible" content="IE=Edge")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -14,18 +14,18 @@ html(lang="en-us")
     //-- FONT AWESOME
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
     //-- GOOGLE FONTS
-    link(href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,500,900' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,500,700' rel='stylesheet' type='text/css')
     //- CSS
-    link(rel="stylesheet" href="public/css/default.css")
+    link(href="public/css/default.css" rel="stylesheet" type="text/css")
   body
     div.container.nav-container
       div.row
         div.col-md-12
           nav.nav
-            a(href="/menu" class="nav-links") MENU
+            a(href="#" class="nav-links") MENU
             a(href="#" class="nav-links") ABOUT US
             a(href="/" class="nav-logo") KOOKOO GRILL
-            a(href="#" id="location" class="regular") LOCATION
+            a(href="http://localhost:1337/#map" id="location" class="nav-links") LOCATION
             a(href="#" class="nav-links") OUR TEAM
     div.container.catering-container
       div.row

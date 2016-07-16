@@ -2,15 +2,15 @@
 @import 'mobile';
 
 @media(min-width: 668px) {
-  .nav-container {  
+  .nav-container {
     width: 100%;
     position: relative;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-    z-index: 1; 
+    z-index: 1;
 
     .nav {
-      text-align: center;  
+      text-align: center;
       display: flex;
       justify-content: space-around;
       padding-bottom: 15px;
@@ -26,7 +26,7 @@
       font-size: $navLink;
       font-weight: $thin;
       letter-spacing: 2px;
-      margin-top: 32px; 
+      margin-top: 32px;
     }
 
     .nav-links:hover {
@@ -63,13 +63,13 @@
       font-size: $hookSize;
       font-weight: $fat;
       text-shadow: -2px 2px $red;
-      margin-top: $hookMar;      
+      margin-top: $hookMar;
     }
 
     .stay-tuned {
       font-size: $label;
       font-weight: $thin;
-      margin-top: $thirty;      
+      margin-top: $thirty;
     }
 
     #scroll {
@@ -90,7 +90,7 @@
     .content-box {
       // width: 100%;
       max-width: 550px;
-      height: 300px;  
+      height: 300px;
       background-color: $red;
       margin-bottom: 20px;
       margin-right: auto;
@@ -117,8 +117,12 @@
     .our-story {
       font-size: $paragraph;
       font-weight: $thin;
-      margin-top: $thirty;   
+      margin-top: $thirty;
     }
+  }
+
+  .team-container {
+
   }
 
   .mailing-container {
@@ -126,9 +130,9 @@
     height: 300px;
     background-color: $lightGray;
     text-align: center;
-    margin-top: $fifteen;    
+    margin-top: $fifteen;
 
-    .join-us {      
+    .join-us {
       font-weight: $fat;
       letter-spacing: 1px;
       margin-top: $content;
@@ -142,14 +146,14 @@
     .input-group {
       margin-top: $forty;
       margin-left: auto;
-      margin-right: auto;      
+      margin-right: auto;
     }
 
     .email {
       height: 50px;
       width: 450px;
       color: $black;
-      font-weight: $thin;      
+      font-weight: $thin;
       letter-spacing: 1px;
       padding-left: $ten;
     }
@@ -178,7 +182,7 @@
       font-size: $connected;
       font-weight: $thin;
       letter-spacing: 1px;
-    }  
+    }
 
     .social {
       display: flex;
@@ -192,7 +196,7 @@
       height: 70px;
       text-align: center;
       vertical-align: middle;
-      font-size: $logo;            
+      font-size: $logo;
       border-radius: 50%;
       padding: 21px;
     }
@@ -204,7 +208,7 @@
 
     .fa-twitter:hover {
       background-color: $twitHov;
-    }    
+    }
 
     .fa-facebook {
       background-color: $fbBlue;
@@ -239,7 +243,7 @@
     height: 300px;
     background-color: $lightGray;
     text-align: center;
-    margin-top: $content;  
+    margin-top: $content;
 
     #map {
       width: 50%;
@@ -251,7 +255,7 @@
     .location {
       width: 50%;
       height: auto;
-      display: inline-block;      
+      display: inline-block;
       vertical-align: top;
     }
 
@@ -261,11 +265,11 @@
       font-size: $logo;
       font-weight: $fat;
       letter-spacing: 1px;
-      margin-top: $fifty;   
+      margin-top: $fifty;
     }
 
     .days {
-      font-weight: $chubby;    
+      font-weight: $chubby;
     }
 
     .sunday {
@@ -275,14 +279,14 @@
     .address,
     .hours {
       font-size: $paragraph;
-      font-weight: $thin;      
+      font-weight: $thin;
     }
   }
 
   //-- MENU CSS
   .catering-container {
     width: 100%;
-    height: 55px;    
+    height: 55px;
     background-color: $red;
     color: $white;
     font-size: 18px;
@@ -297,6 +301,6 @@
   .footer {
     width: 100%;
     height: 100px;
-    background-color: $footBlack;   
+    background-color: $footBlack;
   }
 }
