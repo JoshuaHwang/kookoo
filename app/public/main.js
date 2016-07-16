@@ -4,8 +4,9 @@ function initMap() {
   var latLong = { lat: 33.835755, lng: -117.916293 }
 
   var map = new google.maps.Map(mapDiv, {
-    center: latLong,    
-    zoom: 12
+    center: latLong,
+    zoom: 12,
+    scrollwheel: false
   });
 
   var marker = new google.maps.Marker({
@@ -16,14 +17,14 @@ function initMap() {
 }
 
 // ON SCROLL REDUCE LOGO SIZE
-$(window).scroll(function() {    
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 450) {
-        $('#logo').addClass('smaller');
+    if(scroll >= 450) {
+      $('#logo').addClass('smaller');
 
     } else {
-        $('#logo').removeClass('smaller');
+      $('#logo').removeClass('smaller');
     }
 });
 
@@ -43,7 +44,7 @@ function scrollDown(e) {
 
 function scrollLocation(e) {
   e.preventDefault;
-  
+
   $('html, body').animate({
       scrollTop: $('#map').offset().top
   }, 1000);
