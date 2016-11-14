@@ -1,11 +1,11 @@
 //-- MOBILE
 
 @media(max-width: 667px) {
-  .nav-container {  
-    width: 100%;    
+  .nav-container {
+    width: 100%;
 
     .nav {
-      text-align: center;  
+      text-align: center;
       display: flex;
       justify-content: space-around;
       padding-bottom: 15px;
@@ -20,7 +20,7 @@
       display: none;
       font-size: $navLink;
       font-weight: $normal;
-      margin-top: 25px;       
+      margin-top: 25px;
     }
 
     .nav-links:hover {
@@ -39,10 +39,10 @@
   .fold-container {
     background-color: $lightGray;
     height: 600px;
-    width: 100%;  
+    width: 100%;
   }
 
-  .content-container {  
+  .content-container {
     width: 100%;
     margin-top: 30px;
 
@@ -63,51 +63,51 @@
       justify-content: space-around;
     }
 
-    .social-icons {
-      color: black;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: $logo;            
-      border-radius: 50%;
-      padding: 23px;
-    }
-
-    .fa-twitter {
-      background-color: $twitBlue;
-      color: $white;
-    }
-
-    .fa-twitter:hover {
-      background-color: $twitHov;
-    }    
-
-    .fa-facebook {
-      background-color: $fbBlue;
-      color: $white;
-    }
-
-    .fa-facebook:hover {
-      background-color: $fbHov;
-    }
-
-    .fa-instagram {
-      background-color: $instaG;
-      color: $white;
-    }
-
-    .fa-instagram:hover {
-      background-color: $instaHov;
-    }
-
-    .fa-yelp {
-      background-color: $yelpRed;
-      color: $white;
-    }
-
-    .fa-yelp:hover {
-      background-color: $yelpHov;
-    }
+    // .social-icons {
+    //   color: black;
+    //   width: 70px;
+    //   height: 70px;
+    //   text-align: center;
+    //   vertical-align: middle;
+    //   font-size: $logo;
+    //   border-radius: 50%;
+    //   padding: 23px;
+    // }
+    //
+    // .fa-twitter {
+    //   background-color: $twitBlue;
+    //   color: $white;
+    // }
+    //
+    // .fa-twitter:hover {
+    //   background-color: $twitHov;
+    // }
+    //
+    // .fa-facebook {
+    //   background-color: $fbBlue;
+    //   color: $white;
+    // }
+    //
+    // .fa-facebook:hover {
+    //   background-color: $fbHov;
+    // }
+    //
+    // .fa-instagram {
+    //   background-color: $instaG;
+    //   color: $white;
+    // }
+    //
+    // .fa-instagram:hover {
+    //   background-color: $instaHov;
+    // }
+    //
+    // .fa-yelp {
+    //   background-color: $yelpRed;
+    //   color: $white;
+    // }
+    //
+    // .fa-yelp:hover {
+    //   background-color: $yelpHov;
+    // }
   }
 }

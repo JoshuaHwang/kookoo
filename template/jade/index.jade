@@ -13,8 +13,8 @@ html(lang="en-us")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
     //-- FONT AWESOME
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
-    //-- GOOGLE FONTS
-    link(href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,500,700' rel='stylesheet' type='text/css')
+    //- GOOGLE FONTS
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,500,700|Rubik:700,500,400,300' rel='stylesheet' type='text/css')
     //- CSS
     link(href="public/css/default.css" rel="stylesheet" type="text/css")
   body
@@ -22,71 +22,80 @@ html(lang="en-us")
       div.row
         div.col-md-12
           nav.nav
-            a(href="/menu" class="nav-links") MENU
-            a(href="#" class="nav-links") ABOUT US
-            a(href="#" class="nav-logo") KOOKOO GRILL
-            a(href="#" id="location" class="nav-links") LOCATION
-            a(href="/our-team" class="nav-links") OUR TEAM
+            a(href="#" class="nav-links") HOME
+            a(href="#" id="menu" class="nav-links") MENU
+            a(href="/" class="nav-logo") KOOKOO GRILL
+            a(href="#" id="findUs" class="nav-links") FIND US
+            a(href="#" id="about" class="nav-links") ABOUT
     div.container.fold-container
       div.row
         div.col-md-10.col-md-offset-1  
-          h1.opening-soon OPENING SOON IN ANAHEIM!
-          p.stay-tuned STAY TUNED FOR UPDATES ON OUR OPENING
-          i(id="scroll" class="fa fa-angle-double-down" aria-hidden="true")
-    div.container#content-container
+          h1.hook EAT MORE #[span.hook-thick KOOKOO.]
+          //- i(id="scroll" class="fa fa-angle-double-down" aria-hidden="true")
+    //- div.container#content-container
+    //-   div.row
+    //-     div.col-md-4
+    //-       div.content-box
+    //-     div.col-md-4
+    //-       div.content-box
+    //-     div.col-md-4
+    //-       div.content-box    
+    div.container#aboutContainer
       div.row
-        div.col-md-4
-          div.content-box
-        div.col-md-4
-          div.content-box
-        div.col-md-4
-          div.content-box    
-    div.container.about-container
-      div.row
-        div.col-md-8.col-md-offset-2
+        div.col-md-8.col-sm-6.col-md-offset-2.col-sm-offset-3
           div.about
             h2.about-us OUR STORY
           div.story
             p.our-story Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    div.container#menuContainer
       div.row
-        div.col-md-6
-        div.col-md-6
-    div.container
+        div.col-md-8.col-sm-6.col-md-offset-2.col-sm-offset-3
+          h3.menu WHAT'S ON THE MENU?
+          p.menu-details At KooKoo Grill we offer a variety of items ranging from burgers to tacos. We try to bring together two cultures of asian and mexican cuisine to make it taste yummy! Click below to see our menu.
+          a(class="btn btn-default menu-btn" href="public/images/menu.pdf" target="_blank") MENU
+    //- div.container
+    //-   div.row
+    //-     div.col-md-8.col-md-offset-2
+    //- div.container.mailing-container
+    //-   div.row
+    //-     div.col-md-10.col-md-offset-1
+    //-       h3.join-us JOIN OUR MAILING LIST
+    //-       p.deal OUR LATEST NEWS, DEALS, AND EVENTS SENT DIRECTLY TO YOU
+    //-       form.input-group
+    //-         input(type="email" class="email" placeholder="Enter your email address")
+    //-         button(type="submit" class="join-btn") JOIN →          
+    //- div.container.social-container
+    //-   div.row
+    //-     div.col-sm-6.col-sm-offset-3
+    //-       h4.follow-us WE'D LOVE TO STAY CONNECTED:
+    //-       div.social
+    //-         //- a(href="https://twitter.com/kookoogrill" target="_blank")
+    //-         //-   i(class="fa fa-twitter social-icons" aria-hidden="true")
+    //-         a(href="https://www.facebook.com/KooKooGrill/" target="_blank")                
+    //-           i(class="fa fa-facebook social-icons" aria-hidden="true")
+    //-         a(href="http://www.yelp.com/biz/kookoo-grill-fusionyaki-anaheim" target="_blank")
+    //-           i(class="fa fa-yelp social-icons" aria-hidden="true")
+    //-         a(href="https://www.instagram.com/kookoogrill/" target="_blank")
+    //-           i(class="fa fa-instagram social-icons" aria-hidden="true")            
+    div.container#mapContainer
       div.row
-        div.col-md-8.col-md-offset-2
-    div.container.mailing-container
-      div.row
-        div.col-md-10.col-md-offset-1
-          h3.join-us JOIN OUR MAILING LIST
-          p.deal OUR LATEST NEWS, DEALS, AND EVENTS SENT DIRECTLY TO YOU
-          form.input-group
-            input(type="email" class="email" placeholder="Enter your email address")
-            button(type="submit" class="join-btn") JOIN →          
-    div.container.social-container
-      div.row
-        div.col-sm-6.col-sm-offset-3
-          h4.follow-us WE'D LOVE TO STAY CONNECTED:
-          div.social
-            //- a(href="https://twitter.com/kookoogrill" target="_blank")
-            //-   i(class="fa fa-twitter social-icons" aria-hidden="true")
-            a(href="https://www.facebook.com/KooKooGrill/" target="_blank")                
-              i(class="fa fa-facebook social-icons" aria-hidden="true")
-            a(href="http://www.yelp.com/biz/kookoo-grill-fusionyaki-anaheim" target="_blank")
-              i(class="fa fa-yelp social-icons" aria-hidden="true")
-            a(href="https://www.instagram.com/kookoogrill/" target="_blank")
-              i(class="fa fa-instagram social-icons" aria-hidden="true")            
-    div.container.map-container
-      div.row
-        div#map
-        div.location
-          h5.our-location OUR LOCATION:
-          p.address 202 West Lincoln, Anaheim, CA 92805
-          h5.our-hours OUR HOURS:
-          p.hours #[span.days MON - SAT:] 10:00AM - 9:00PM
-          //- P.hours #[span.days.sunday SUNDAY:] 11:00AM - 9:00PM
+        div.find-title
+          h5.find-us -FIND US-
+      div.row      
+        div.col-md-4.col-sm-5.col-md-offset-2.col-sm-offset-1
+          div.location
+            h5.our-location OUR LOCATION:
+            p.address 202 West Lincoln, Anaheim, CA 92805
+            h5.our-hours OUR HOURS:
+            p.hours #[span.days MON - SAT:] 10:00AM - 9:00PM
+            P.hours #[span.days.sunday SUNDAY:] CLOSED          
+            h5.our-number OUR NUMBER:
+            p.number (714) 603-7665
+        div.col-md-4.col-sm-5
+          div#map
     footer.container.footer
       div.row
-        div.col-md-4
-          p.copyright 
-    script(src="public/main.js")
+        div.col-md-12
+          p.copyright Trademark KooKoo Grill and Fusionyaki inc. 
+    script(src="public/js/main.js")
     script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer)

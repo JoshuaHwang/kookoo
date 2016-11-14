@@ -1,12 +1,10 @@
 @import 'base';
 @import 'mobile';
 
-@media(min-width: 668px) {
+// @media(min-width: 668px) {
   .nav-container {
     width: 100%;
     position: relative;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
 
     .nav {
@@ -35,10 +33,11 @@
     }
 
     .nav-logo {
+      font-family: Rubik, sans-serif;
       color: $red;
       font-size: $logo;
-      font-weight: $fat;
-      margin-top: 20px;
+      font-weight: 500;
+      margin-top: 20px;      
     }
 
     // .regular {
@@ -59,17 +58,16 @@
     width: 100%;
     text-align: center;
 
-    .opening-soon {
-      font-size: $hookSize;
-      font-weight: $fat;
-      text-shadow: -2px 2px $red;
-      margin-top: $hookMar;
+    .hook {
+      font-family: Rubik, sans-serif;
+      font-size: 90px;
+      font-weight: 300;
+      margin-top: 75px;
     }
 
-    .stay-tuned {
-      font-size: $label;
-      font-weight: $thin;
-      margin-top: $thirty;
+    .hook-thick {
+      font-weight: 500;
+      color: $red;
     }
 
     #scroll {
@@ -98,7 +96,8 @@
     }
   }
 
-  .about-container {
+  #aboutContainer {
+    width: 100%;
     margin-top: $forty;
     margin-bottom: $fifty;
 
@@ -108,6 +107,8 @@
 
     .about-us {
       font-size: $header;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px;
     }
 
     .story {
@@ -121,8 +122,45 @@
     }
   }
 
-  .team-container {
+  #menuContainer {
+    width: 100%;
+    height: 350px;
+    background-color: $lightGray;
+    text-align: center;
+    margin-top: $fifty;
 
+    .menu {
+      font-size: $header;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px;
+      margin-top: 75px;
+    }
+
+    .menu-details {
+      font-size: $paragraph;
+      font-weight: $thin;
+      margin-top: $thirty;
+      text-align: left;
+    }
+
+    .menu-btn {
+      background-color: transparent;
+      color: $red;
+      width: 100px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-color: $red;
+      border-width: 2px;
+      margin-top: $fifty;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .menu-btn:hover {
+      background-color: $red;
+      color: $white;
+    }
   }
 
   .mailing-container {
@@ -133,7 +171,8 @@
     margin-top: $fifteen;
 
     .join-us {
-      font-weight: $fat;
+      // font-weight: $fat;
+      font-family: 'Rubik', sans-serif;
       letter-spacing: 1px;
       margin-top: $content;
     }
@@ -174,110 +213,129 @@
     }
   }
 
-  .social-container {
-    text-align: center;
-    margin-top: $fifty;
+  // .social-container {
+  //   text-align: center;
+  //   margin-top: $fifty;
+  //
+  //   .follow-us {
+  //     font-size: $connected;
+  //     font-weight: $thin;
+  //     letter-spacing: 1px;
+  //   }
+  //
+  //   .social {
+  //     display: flex;
+  //     justify-content: space-around;
+  //     margin-top: $forty;
+  //   }
+  //
+  //   .social-icons {
+  //     color: black;
+  //     width: 70px;
+  //     height: 70px;
+  //     text-align: center;
+  //     vertical-align: middle;
+  //     font-size: $logo;
+  //     border-radius: 50%;
+  //     padding: 21px;
+  //   }
 
-    .follow-us {
-      font-size: $connected;
-      font-weight: $thin;
-      letter-spacing: 1px;
-    }
+    // .fa-twitter {
+    //   background-color: $twitBlue;
+    //   color: $white;
+    // }
+    //
+    // .fa-twitter:hover {
+    //   background-color: $twitHov;
+    // }
+    //
+    // .fa-facebook {
+    //   background-color: $fbBlue;
+    //   color: $white;
+    // }
+    //
+    // .fa-facebook:hover {
+    //   background-color: $fbHov;
+    // }
+    //
+    // .fa-instagram {
+    //   background-color: $instaG;
+    //   color: $white;
+    // }
+    //
+    // .fa-instagram:hover {
+    //   background-color: $instaHov;
+    // }
+    //
+    // .fa-yelp {
+    //   background-color: $yelpRed;
+    //   color: $white;
+    // }
+    //
+    // .fa-yelp:hover {
+    //   background-color: $yelpHov;
+    // }
+  // }
 
-    .social {
-      display: flex;
-      justify-content: space-around;
-      margin-top: $forty;
-    }
-
-    .social-icons {
-      color: black;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: $logo;
-      border-radius: 50%;
-      padding: 21px;
-    }
-
-    .fa-twitter {
-      background-color: $twitBlue;
-      color: $white;
-    }
-
-    .fa-twitter:hover {
-      background-color: $twitHov;
-    }
-
-    .fa-facebook {
-      background-color: $fbBlue;
-      color: $white;
-    }
-
-    .fa-facebook:hover {
-      background-color: $fbHov;
-    }
-
-    .fa-instagram {
-      background-color: $instaG;
-      color: $white;
-    }
-
-    .fa-instagram:hover {
-      background-color: $instaHov;
-    }
-
-    .fa-yelp {
-      background-color: $yelpRed;
-      color: $white;
-    }
-
-    .fa-yelp:hover {
-      background-color: $yelpHov;
-    }
-  }
-
-  .map-container {
-    width: 100%;
-    height: 300px;
-    background-color: $lightGray;
+  #mapContainer {
     text-align: center;
     margin-top: $content;
+    margin-bottom: $content;
+
+    .find-title {
+      margin-bottom: $fifty;
+
+      .find-us {
+        font-size: $header;
+        font-family: 'Rubik', sans-serif;
+        letter-spacing: 2px;
+      }
+    }
 
     #map {
-      width: 50%;
-      height: 300px;
+      width: 100%;
+      height: 400px;
       display: inline-block;
       background-color: #CCC;
     }
 
     .location {
-      width: 50%;
       height: auto;
       display: inline-block;
       vertical-align: top;
+      text-align: left !important;
     }
 
     .our-location,
-    .our-hours {
+    .our-hours,
+    .our-number {
       color: $red;
-      font-size: $logo;
-      font-weight: $fat;
+      font-size: $smallLogo;
+      font-family: 'Rubik', sans-serif;
       letter-spacing: 1px;
+    }
+
+    .our-hours,
+    .our-number {
       margin-top: $fifty;
+    }
+
+    .number {
+      margin-bottom: $fifty;
     }
 
     .days {
       font-weight: $chubby;
+      text-align: left;
     }
 
     .sunday {
-      margin-right: 20px;
+      text-align: left;
     }
 
     .address,
     .hours {
+      text-align: left;
       font-size: $paragraph;
       font-weight: $thin;
     }
@@ -302,5 +360,9 @@
     width: 100%;
     height: 100px;
     background-color: $footBlack;
+
+    .copyright {
+        color: $gray;
+    }
   }
-}
+// }

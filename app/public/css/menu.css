@@ -46,36 +46,7 @@ html, body {
     margin-bottom: 100px; }
     .footer .social {
       display: flex;
-      justify-content: space-around; }
-    .footer .social-icons {
-      color: black;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 30px;
-      border-radius: 50%;
-      padding: 23px; }
-    .footer .fa-twitter {
-      background-color: #55ACEE;
-      color: #FDF9FD; }
-    .footer .fa-twitter:hover {
-      background-color: #7CC0F4; }
-    .footer .fa-facebook {
-      background-color: #3B5998;
-      color: #FDF9FD; }
-    .footer .fa-facebook:hover {
-      background-color: #5772AC; }
-    .footer .fa-instagram {
-      background-color: #6DC993;
-      color: #FDF9FD; }
-    .footer .fa-instagram:hover {
-      background-color: #9BE1B7; }
-    .footer .fa-yelp {
-      background-color: #C41200;
-      color: #FDF9FD; }
-    .footer .fa-yelp:hover {
-      background-color: #F5250F; } }
+      justify-content: space-around; } }
 
 @media (min-width: 668px) {
   .nav-container {

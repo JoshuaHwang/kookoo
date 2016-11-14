@@ -46,226 +46,209 @@ html, body {
     margin-bottom: 100px; }
     .footer .social {
       display: flex;
-      justify-content: space-around; }
-    .footer .social-icons {
-      color: black;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 30px;
-      border-radius: 50%;
-      padding: 23px; }
-    .footer .fa-twitter {
-      background-color: #55ACEE;
-      color: #FDF9FD; }
-    .footer .fa-twitter:hover {
-      background-color: #7CC0F4; }
-    .footer .fa-facebook {
-      background-color: #3B5998;
-      color: #FDF9FD; }
-    .footer .fa-facebook:hover {
-      background-color: #5772AC; }
-    .footer .fa-instagram {
-      background-color: #6DC993;
-      color: #FDF9FD; }
-    .footer .fa-instagram:hover {
-      background-color: #9BE1B7; }
-    .footer .fa-yelp {
-      background-color: #C41200;
-      color: #FDF9FD; }
-    .footer .fa-yelp:hover {
-      background-color: #F5250F; } }
+      justify-content: space-around; } }
 
-@media (min-width: 668px) {
-  .nav-container {
-    width: 100%;
-    position: relative;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-    z-index: 1; }
-    .nav-container .nav {
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 15px; }
-    .nav-container .nav-links,
-    .nav-container .nav-logo {
-      color: #020202;
-      text-decoration: none; }
-    .nav-container .nav-links {
-      font-size: 13px;
-      font-weight: 300;
-      letter-spacing: 2px;
-      margin-top: 32px; }
-    .nav-container .nav-links:hover {
-      color: #F63654; }
-    .nav-container .nav-logo {
-      color: #F63654;
-      font-size: 30px;
-      font-weight: 700;
-      margin-top: 20px; }
-  .fold-container {
-    background-color: #FAFAFA;
-    height: 600px;
-    width: 100%;
-    text-align: center; }
-    .fold-container .opening-soon {
-      font-size: 60px;
-      font-weight: 700;
-      text-shadow: -2px 2px #F63654;
-      margin-top: 155px; }
-    .fold-container .stay-tuned {
-      font-size: 17px;
-      font-weight: 300;
-      margin-top: 30px; }
-    .fold-container #scroll {
-      font-size: 36px;
-      margin-top: 155px; }
-    .fold-container #scroll:hover {
-      color: #AFAFAF;
-      cursor: pointer; }
-  #content-container {
-    width: 100%;
-    margin-top: 30px; }
-    #content-container .content-box {
-      max-width: 550px;
-      height: 300px;
-      background-color: #F63654;
-      margin-bottom: 20px;
-      margin-right: auto;
-      margin-left: auto; }
-  .about-container {
-    margin-top: 40px;
-    margin-bottom: 50px; }
-    .about-container .about {
-      text-align: center; }
-    .about-container .about-us {
-      font-size: 36px; }
-    .about-container .story {
-      text-align: left; }
-    .about-container .our-story {
-      font-size: 16px;
-      font-weight: 300;
-      margin-top: 30px; }
-  .mailing-container {
-    width: 100%;
-    height: 300px;
-    background-color: #FAFAFA;
+.nav-container {
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+  .nav-container .nav {
     text-align: center;
-    margin-top: 15px; }
-    .mailing-container .join-us {
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-top: 75px; }
-    .mailing-container .deal {
-      font-weight: 300;
-      letter-spacing: 1px; }
-    .mailing-container .input-group {
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto; }
-    .mailing-container .email {
-      height: 50px;
-      width: 450px;
-      color: #020202;
-      font-weight: 300;
-      letter-spacing: 1px;
-      padding-left: 10px; }
-    .mailing-container .join-btn {
-      height: 50px;
-      width: 115px;
-      background-color: #F63654;
-      color: #FDF9FD;
-      font-size: 17px;
-      letter-spacing: 2px;
-      margin-left: 5px;
-      border: none; }
-    .mailing-container .join-btn:hover {
-      background-color: #F85C75; }
-  .social-container {
-    text-align: center;
-    margin-top: 50px; }
-    .social-container .follow-us {
-      font-size: 18px;
-      font-weight: 300;
-      letter-spacing: 1px; }
-    .social-container .social {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 40px; }
-    .social-container .social-icons {
-      color: black;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 30px;
-      border-radius: 50%;
-      padding: 21px; }
-    .social-container .fa-twitter {
-      background-color: #55ACEE;
-      color: #FDF9FD; }
-    .social-container .fa-twitter:hover {
-      background-color: #7CC0F4; }
-    .social-container .fa-facebook {
-      background-color: #3B5998;
-      color: #FDF9FD; }
-    .social-container .fa-facebook:hover {
-      background-color: #5772AC; }
-    .social-container .fa-instagram {
-      background-color: #6DC993;
-      color: #FDF9FD; }
-    .social-container .fa-instagram:hover {
-      background-color: #9BE1B7; }
-    .social-container .fa-yelp {
-      background-color: #C41200;
-      color: #FDF9FD; }
-    .social-container .fa-yelp:hover {
-      background-color: #F5250F; }
-  .map-container {
-    width: 100%;
-    height: 300px;
-    background-color: #FAFAFA;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px; }
+  .nav-container .nav-links,
+  .nav-container .nav-logo {
+    color: #020202;
+    text-decoration: none; }
+  .nav-container .nav-links {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 32px; }
+  .nav-container .nav-links:hover {
+    color: #F63654; }
+  .nav-container .nav-logo {
+    font-family: Rubik, sans-serif;
+    color: #F63654;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px; }
+
+.fold-container {
+  background-color: #FAFAFA;
+  height: 600px;
+  width: 100%;
+  text-align: center; }
+  .fold-container .hook {
+    font-family: Rubik, sans-serif;
+    font-size: 90px;
+    font-weight: 300;
     margin-top: 75px; }
-    .map-container #map {
-      width: 50%;
-      height: 300px;
-      display: inline-block;
-      background-color: #CCC; }
-    .map-container .location {
-      width: 50%;
-      height: auto;
-      display: inline-block;
-      vertical-align: top; }
-    .map-container .our-location,
-    .map-container .our-hours {
-      color: #F63654;
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-top: 50px; }
-    .map-container .days {
-      font-weight: 500; }
-    .map-container .sunday {
-      margin-right: 20px; }
-    .map-container .address,
-    .map-container .hours {
-      font-size: 16px;
-      font-weight: 300; }
-  .catering-container {
-    width: 100%;
-    height: 55px;
+  .fold-container .hook-thick {
+    font-weight: 500;
+    color: #F63654; }
+  .fold-container #scroll {
+    font-size: 36px;
+    margin-top: 155px; }
+  .fold-container #scroll:hover {
+    color: #AFAFAF;
+    cursor: pointer; }
+
+#content-container {
+  width: 100%;
+  margin-top: 30px; }
+  #content-container .content-box {
+    max-width: 550px;
+    height: 300px;
     background-color: #F63654;
-    color: #FDF9FD;
-    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto; }
+
+#aboutContainer {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px; }
+  #aboutContainer .about {
+    text-align: center; }
+  #aboutContainer .about-us {
+    font-size: 36px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px; }
+  #aboutContainer .story {
+    text-align: left; }
+  #aboutContainer .our-story {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px; }
+
+#menuContainer {
+  width: 100%;
+  height: 350px;
+  background-color: #FAFAFA;
+  text-align: center;
+  margin-top: 50px; }
+  #menuContainer .menu {
+    font-size: 36px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 75px; }
+  #menuContainer .menu-details {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: left; }
+  #menuContainer .menu-btn {
+    background-color: transparent;
+    color: #F63654;
+    width: 100px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-color: #F63654;
+    border-width: 2px;
+    margin-top: 50px;
+    transition: all 0.2s ease-in-out; }
+  #menuContainer .menu-btn:hover {
+    background-color: #F63654;
+    color: #FDF9FD; }
+
+.mailing-container {
+  width: 100%;
+  height: 300px;
+  background-color: #FAFAFA;
+  text-align: center;
+  margin-top: 15px; }
+  .mailing-container .join-us {
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 75px; }
+  .mailing-container .deal {
+    font-weight: 300;
+    letter-spacing: 1px; }
+  .mailing-container .input-group {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; }
+  .mailing-container .email {
+    height: 50px;
+    width: 450px;
+    color: #020202;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 1px;
-    padding-top: 15px;
-    text-align: center; }
-  .footer {
+    padding-left: 10px; }
+  .mailing-container .join-btn {
+    height: 50px;
+    width: 115px;
+    background-color: #F63654;
+    color: #FDF9FD;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    border: none; }
+  .mailing-container .join-btn:hover {
+    background-color: #F85C75; }
+
+#mapContainer {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 75px; }
+  #mapContainer .find-title {
+    margin-bottom: 50px; }
+    #mapContainer .find-title .find-us {
+      font-size: 36px;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px; }
+  #mapContainer #map {
     width: 100%;
-    height: 100px;
-    background-color: #1D1D1D; } }
+    height: 400px;
+    display: inline-block;
+    background-color: #CCC; }
+  #mapContainer .location {
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left !important; }
+  #mapContainer .our-location,
+  #mapContainer .our-hours,
+  #mapContainer .our-number {
+    color: #F63654;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px; }
+  #mapContainer .our-hours,
+  #mapContainer .our-number {
+    margin-top: 50px; }
+  #mapContainer .number {
+    margin-bottom: 50px; }
+  #mapContainer .days {
+    font-weight: 500;
+    text-align: left; }
+  #mapContainer .sunday {
+    text-align: left; }
+  #mapContainer .address,
+  #mapContainer .hours {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300; }
+
+.catering-container {
+  width: 100%;
+  height: 55px;
+  background-color: #F63654;
+  color: #FDF9FD;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 1px;
+  padding-top: 15px;
+  text-align: center; }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #1D1D1D; }
+  .footer .copyright {
+    color: #AFAFAF; }
