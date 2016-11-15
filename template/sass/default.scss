@@ -29,26 +29,28 @@
 
     .nav-links:hover {
       color: $red;
-      // transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    .header-logo {
+      font-family: 'Rubik', sans-serif;
+      color: $red;
+      font-size: 28px;
+      // font-weight: 500;
+      margin-top: 15px;
+    }
+
+    .kookoo-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block;
     }
 
     .nav-logo {
-      font-family: Rubik, sans-serif;
       color: $red;
-      font-size: $logo;
       font-weight: 500;
-      margin-top: 20px;      
+      display: inline-block;
     }
-
-    // .regular {
-    //   font-size: $logo;
-    // }
-
-    // .smaller {
-    //   font-size: $smallLogo;
-    //   margin-top: 23px !important;
-    //   transition: all 0.3s ease;
-    // }
   }
 
   //-- HOME CSS
@@ -124,7 +126,7 @@
 
   #menuContainer {
     width: 100%;
-    height: 350px;
+    height: auto;
     background-color: $lightGray;
     text-align: center;
     margin-top: $fifty;
@@ -143,6 +145,11 @@
       text-align: left;
     }
 
+    .phone {
+      color: $red;
+      font-weight: 600;
+    }
+
     .menu-btn {
       background-color: transparent;
       color: $red;
@@ -153,7 +160,8 @@
       letter-spacing: 2px;
       border-color: $red;
       border-width: 2px;
-      margin-top: $fifty;
+      margin-top: 40px;
+      margin-bottom: 75px;
       transition: all 0.2s ease-in-out;
     }
 
@@ -213,70 +221,6 @@
     }
   }
 
-  // .social-container {
-  //   text-align: center;
-  //   margin-top: $fifty;
-  //
-  //   .follow-us {
-  //     font-size: $connected;
-  //     font-weight: $thin;
-  //     letter-spacing: 1px;
-  //   }
-  //
-  //   .social {
-  //     display: flex;
-  //     justify-content: space-around;
-  //     margin-top: $forty;
-  //   }
-  //
-  //   .social-icons {
-  //     color: black;
-  //     width: 70px;
-  //     height: 70px;
-  //     text-align: center;
-  //     vertical-align: middle;
-  //     font-size: $logo;
-  //     border-radius: 50%;
-  //     padding: 21px;
-  //   }
-
-    // .fa-twitter {
-    //   background-color: $twitBlue;
-    //   color: $white;
-    // }
-    //
-    // .fa-twitter:hover {
-    //   background-color: $twitHov;
-    // }
-    //
-    // .fa-facebook {
-    //   background-color: $fbBlue;
-    //   color: $white;
-    // }
-    //
-    // .fa-facebook:hover {
-    //   background-color: $fbHov;
-    // }
-    //
-    // .fa-instagram {
-    //   background-color: $instaG;
-    //   color: $white;
-    // }
-    //
-    // .fa-instagram:hover {
-    //   background-color: $instaHov;
-    // }
-    //
-    // .fa-yelp {
-    //   background-color: $yelpRed;
-    //   color: $white;
-    // }
-    //
-    // .fa-yelp:hover {
-    //   background-color: $yelpHov;
-    // }
-  // }
-
   #mapContainer {
     text-align: center;
     margin-top: $content;
@@ -306,17 +250,14 @@
       text-align: left !important;
     }
 
-    .our-location,
-    .our-hours,
-    .our-number {
+    .finding-details {
       color: $red;
       font-size: $smallLogo;
       font-family: 'Rubik', sans-serif;
       letter-spacing: 1px;
     }
 
-    .our-hours,
-    .our-number {
+    .finding-details:nth-child(n+2) {
       margin-top: $fifty;
     }
 
@@ -333,8 +274,7 @@
       text-align: left;
     }
 
-    .address,
-    .hours {
+    .location-details {
       text-align: left;
       font-size: $paragraph;
       font-weight: $thin;
@@ -357,12 +297,31 @@
 
   //-- FOOTER CSS
   .footer {
-    width: 100%;
-    height: 100px;
-    background-color: $footBlack;
+    // width: 100%;
+    height: auto;
+    border-top: 1px solid $gray;
+    margin-bottom: 20px;
 
-    .copyright {
-        color: $gray;
+    .footer-row {
+      margin-top: 20px;
+    }
+
+    .footer-logo {
+      font-family: 'Rubik', sans-serif;
+      color: $footBlack;
+      font-size: 28px;
+      font-weight: 500;
+      // margin-top: 20px;
+    }
+
+    .kookoo-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block;
+    }
+
+    .logo {
+      display: inline-block;
     }
   }
 // }

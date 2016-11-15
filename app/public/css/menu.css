@@ -22,7 +22,7 @@ html, body {
       font-weight: 400;
       margin-top: 25px; }
     .nav-container .nav-links:hover {
-      color: #AFAFAF;
+      color: #ded9d9;
       transition: all 0.2s ease; }
     .nav-container .nav-logo {
       color: #F63654;

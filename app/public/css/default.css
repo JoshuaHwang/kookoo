@@ -22,7 +22,7 @@ html, body {
       font-weight: 400;
       margin-top: 25px; }
     .nav-container .nav-links:hover {
-      color: #AFAFAF;
+      color: #ded9d9;
       transition: all 0.2s ease; }
     .nav-container .nav-logo {
       color: #F63654;
@@ -67,13 +67,21 @@ html, body {
     letter-spacing: 2px;
     margin-top: 32px; }
   .nav-container .nav-links:hover {
-    color: #F63654; }
-  .nav-container .nav-logo {
-    font-family: Rubik, sans-serif;
     color: #F63654;
-    font-size: 30px;
+    transition: all 0.2s ease; }
+  .nav-container .header-logo {
+    font-family: 'Rubik', sans-serif;
+    color: #F63654;
+    font-size: 28px;
+    margin-top: 15px; }
+  .nav-container .kookoo-logo {
+    height: 50px;
+    width: auto;
+    display: inline-block; }
+  .nav-container .nav-logo {
+    color: #F63654;
     font-weight: 500;
-    margin-top: 20px; }
+    display: inline-block; }
 
 .fold-container {
   background-color: #FAFAFA;
@@ -92,7 +100,7 @@ html, body {
     font-size: 36px;
     margin-top: 155px; }
   .fold-container #scroll:hover {
-    color: #AFAFAF;
+    color: #ded9d9;
     cursor: pointer; }
 
 #content-container {
@@ -125,7 +133,7 @@ html, body {
 
 #menuContainer {
   width: 100%;
-  height: 350px;
+  height: auto;
   background-color: #FAFAFA;
   text-align: center;
   margin-top: 50px; }
@@ -139,6 +147,9 @@ html, body {
     font-weight: 300;
     margin-top: 30px;
     text-align: left; }
+  #menuContainer .phone {
+    color: #F63654;
+    font-weight: 600; }
   #menuContainer .menu-btn {
     background-color: transparent;
     color: #F63654;
@@ -149,7 +160,8 @@ html, body {
     letter-spacing: 2px;
     border-color: #F63654;
     border-width: 2px;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 75px;
     transition: all 0.2s ease-in-out; }
   #menuContainer .menu-btn:hover {
     background-color: #F63654;
@@ -211,15 +223,12 @@ html, body {
     display: inline-block;
     vertical-align: top;
     text-align: left !important; }
-  #mapContainer .our-location,
-  #mapContainer .our-hours,
-  #mapContainer .our-number {
+  #mapContainer .finding-details {
     color: #F63654;
     font-size: 24px;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 1px; }
-  #mapContainer .our-hours,
-  #mapContainer .our-number {
+  #mapContainer .finding-details:nth-child(n+2) {
     margin-top: 50px; }
   #mapContainer .number {
     margin-bottom: 50px; }
@@ -228,8 +237,7 @@ html, body {
     text-align: left; }
   #mapContainer .sunday {
     text-align: left; }
-  #mapContainer .address,
-  #mapContainer .hours {
+  #mapContainer .location-details {
     text-align: left;
     font-size: 16px;
     font-weight: 300; }
@@ -247,8 +255,19 @@ html, body {
   text-align: center; }
 
 .footer {
-  width: 100%;
-  height: 100px;
-  background-color: #1D1D1D; }
-  .footer .copyright {
-    color: #AFAFAF; }
+  height: auto;
+  border-top: 1px solid #ded9d9;
+  margin-bottom: 20px; }
+  .footer .footer-row {
+    margin-top: 20px; }
+  .footer .footer-logo {
+    font-family: 'Rubik', sans-serif;
+    color: #1D1D1D;
+    font-size: 28px;
+    font-weight: 500; }
+  .footer .kookoo-logo {
+    height: 50px;
+    width: auto;
+    display: inline-block; }
+  .footer .logo {
+    display: inline-block; }

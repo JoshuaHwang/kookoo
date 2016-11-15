@@ -24,12 +24,14 @@ html(lang="en-us")
           nav.nav
             a(href="#" class="nav-links") HOME
             a(href="#" id="menu" class="nav-links") MENU
-            a(href="/" class="nav-logo") KOOKOO GRILL
+            div.header-logo
+              img(src="public/images/kookoo-logo.png" class="kookoo-logo")
+              a(href="/" class="nav-logo") KOOKOO GRILL
             a(href="#" id="findUs" class="nav-links") FIND US
             a(href="#" id="about" class="nav-links") ABOUT
     div.container.fold-container
       div.row
-        div.col-md-10.col-md-offset-1  
+        div.col-sm-10.col-sm-offset-1  
           h1.hook EAT MORE #[span.hook-thick KOOKOO.]
           //- i(id="scroll" class="fa fa-angle-double-down" aria-hidden="true")
     //- div.container#content-container
@@ -52,6 +54,7 @@ html(lang="en-us")
         div.col-md-8.col-sm-6.col-md-offset-2.col-sm-offset-3
           h3.menu WHAT'S ON THE MENU?
           p.menu-details At KooKoo Grill we offer a variety of items ranging from burgers to tacos. We try to bring together two cultures of asian and mexican cuisine to make it taste yummy! Click below to see our menu.
+          p.menu-details All items on the menu are available to cater. If you would like to place an order please call #[span.phone (714) 603-7665]
           a(class="btn btn-default menu-btn" href="public/images/menu.pdf" target="_blank") MENU
     //- div.container
     //-   div.row
@@ -84,18 +87,30 @@ html(lang="en-us")
       div.row      
         div.col-md-4.col-sm-5.col-md-offset-2.col-sm-offset-1
           div.location
-            h5.our-location OUR LOCATION:
-            p.address 202 West Lincoln, Anaheim, CA 92805
-            h5.our-hours OUR HOURS:
-            p.hours #[span.days MON - SAT:] 10:00AM - 9:00PM
-            P.hours #[span.days.sunday SUNDAY:] CLOSED          
-            h5.our-number OUR NUMBER:
+            h5.finding-details OUR LOCATION:
+            p.location-details 202 West Lincoln, Anaheim, CA 92805
+            h5.finding-details OUR HOURS:
+            p.location-details #[span.days MON - SAT:] 10:00AM - 9:00PM
+            P.location-details #[span.days.sunday SUNDAY:] CLOSED          
+            h5.finding-details OUR NUMBER:
             p.number (714) 603-7665
         div.col-md-4.col-sm-5
           div#map
     footer.container.footer
-      div.row
-        div.col-md-12
-          p.copyright Trademark KooKoo Grill and Fusionyaki inc. 
+      div.row.footer-row
+        div.col-sm-6
+          div.footer-logo
+            img(src="public/images/kookoo-logo.png" class="kookoo-logo")
+            p.logo KOOKOO GRILL
+        div.col-sm-6
+          div.social
+            a(href="https://twitter.com/kookoogrill" target="_blank")
+              i(class="fa fa-twitter social-icons" aria-hidden="true")
+            a(href="https://www.facebook.com/KooKooGrill/" target="_blank")                
+              i(class="fa fa-facebook social-icons" aria-hidden="true")
+            a(href="http://www.yelp.com/biz/kookoo-grill-fusionyaki-anaheim" target="_blank")
+              i(class="fa fa-yelp social-icons" aria-hidden="true")
+            a(href="https://www.instagram.com/kookoogrill/" target="_blank")
+              i(class="fa fa-instagram social-icons" aria-hidden="true")     
     script(src="public/js/main.js")
     script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer)
