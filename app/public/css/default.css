@@ -4,9 +4,11 @@
 html, body {
   font-family: 'Roboto', sans-serif; }
 
-@media (max-width: 667px) {
+@media (max-width: 668px) {
   .nav-container {
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    z-index: 1; }
     .nav-container .nav {
       text-align: center;
       display: flex;
@@ -17,257 +19,434 @@ html, body {
       color: #020202;
       text-decoration: none; }
     .nav-container .nav-links {
-      display: none;
       font-size: 13px;
-      font-weight: 400;
-      margin-top: 25px; }
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin-top: 32px;
+      display: none; }
     .nav-container .nav-links:hover {
-      color: #ded9d9;
-      transition: all 0.2s ease; }
+      color: #F63654; }
+    .nav-container .header-logo {
+      font-family: 'Rubik', sans-serif;
+      color: #F63654;
+      font-size: 28px;
+      margin-top: 15px; }
+    .nav-container .kookoo-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block; }
     .nav-container .nav-logo {
       color: #F63654;
-      font-size: 30px;
-      font-weight: 700;
-      margin-top: 20px; }
+      font-weight: 500;
+      display: inline-block; }
   .fold-container {
     background-color: #FAFAFA;
     height: 600px;
-    width: 100%; }
-  .content-container {
+    width: 100%;
+    text-align: center; }
+    .fold-container .hook {
+      font-family: Rubik, sans-serif;
+      font-size: 50px;
+      font-weight: 300;
+      margin-top: 75px; }
+    .fold-container .hook-thick {
+      font-weight: 500;
+      color: #F63654; }
+    .fold-container #scroll {
+      font-size: 36px;
+      margin-top: 155px; }
+    .fold-container #scroll:hover {
+      color: #ded9d9;
+      cursor: pointer; }
+  #content-container {
     width: 100%;
     margin-top: 30px; }
-    .content-container .content-box {
-      width: 100%;
+    #content-container .content-box {
+      max-width: 550px;
       height: 300px;
       background-color: #F63654;
-      margin-bottom: 20px; }
-  .footer {
-    margin-top: 30px;
-    margin-bottom: 100px; }
-    .footer .social {
-      display: flex;
-      justify-content: space-around; } }
-
-.nav-container {
-  width: 100%;
-  position: relative;
-  z-index: 1; }
-  .nav-container .nav {
+      margin-bottom: 20px;
+      margin-right: auto;
+      margin-left: auto; }
+  #aboutContainer {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px; }
+    #aboutContainer .about {
+      text-align: center; }
+    #aboutContainer .about-us {
+      font-size: 26px;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px; }
+    #aboutContainer .story {
+      text-align: left; }
+    #aboutContainer .our-story {
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 30px; }
+  #menuContainer {
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFA;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 15px; }
-  .nav-container .nav-links,
-  .nav-container .nav-logo {
-    color: #020202;
-    text-decoration: none; }
-  .nav-container .nav-links {
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin-top: 32px; }
-  .nav-container .nav-links:hover {
-    color: #F63654;
-    transition: all 0.2s ease; }
-  .nav-container .header-logo {
-    font-family: 'Rubik', sans-serif;
-    color: #F63654;
-    font-size: 28px;
-    margin-top: 15px; }
-  .nav-container .kookoo-logo {
-    height: 50px;
-    width: auto;
-    display: inline-block; }
-  .nav-container .nav-logo {
-    color: #F63654;
-    font-weight: 500;
-    display: inline-block; }
-
-.fold-container {
-  background-color: #FAFAFA;
-  height: 600px;
-  width: 100%;
-  text-align: center; }
-  .fold-container .hook {
-    font-family: Rubik, sans-serif;
-    font-size: 90px;
-    font-weight: 300;
-    margin-top: 75px; }
-  .fold-container .hook-thick {
-    font-weight: 500;
-    color: #F63654; }
-  .fold-container #scroll {
-    font-size: 36px;
-    margin-top: 155px; }
-  .fold-container #scroll:hover {
-    color: #ded9d9;
-    cursor: pointer; }
-
-#content-container {
-  width: 100%;
-  margin-top: 30px; }
-  #content-container .content-box {
-    max-width: 550px;
+    margin-top: 50px; }
+    #menuContainer .menu {
+      font-size: 26px;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px;
+      margin-top: 75px; }
+    #menuContainer .menu-details {
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 30px;
+      text-align: left; }
+    #menuContainer .phone {
+      color: #F63654;
+      font-weight: 600; }
+    #menuContainer .menu-btn {
+      background-color: transparent;
+      color: #F63654;
+      width: 100px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-color: #F63654;
+      border-width: 2px;
+      margin-top: 40px;
+      margin-bottom: 75px; }
+    #menuContainer .menu-btn:hover {
+      background-color: #F63654;
+      color: #FDF9FD; }
+  .mailing-container {
+    width: 100%;
     height: 300px;
-    background-color: #F63654;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto; }
-
-#aboutContainer {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 50px; }
-  #aboutContainer .about {
-    text-align: center; }
-  #aboutContainer .about-us {
-    font-size: 36px;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px; }
-  #aboutContainer .story {
-    text-align: left; }
-  #aboutContainer .our-story {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 30px; }
-
-#menuContainer {
-  width: 100%;
-  height: auto;
-  background-color: #FAFAFA;
-  text-align: center;
-  margin-top: 50px; }
-  #menuContainer .menu {
-    font-size: 36px;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px;
-    margin-top: 75px; }
-  #menuContainer .menu-details {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 30px;
-    text-align: left; }
-  #menuContainer .phone {
-    color: #F63654;
-    font-weight: 600; }
-  #menuContainer .menu-btn {
-    background-color: transparent;
-    color: #F63654;
-    width: 100px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    border-color: #F63654;
-    border-width: 2px;
-    margin-top: 40px;
-    margin-bottom: 75px;
-    transition: all 0.2s ease-in-out; }
-  #menuContainer .menu-btn:hover {
-    background-color: #F63654;
-    color: #FDF9FD; }
-
-.mailing-container {
-  width: 100%;
-  height: 300px;
-  background-color: #FAFAFA;
-  text-align: center;
-  margin-top: 15px; }
-  .mailing-container .join-us {
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 1px;
-    margin-top: 75px; }
-  .mailing-container .deal {
-    font-weight: 300;
-    letter-spacing: 1px; }
-  .mailing-container .input-group {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto; }
-  .mailing-container .email {
-    height: 50px;
-    width: 450px;
-    color: #020202;
-    font-weight: 300;
-    letter-spacing: 1px;
-    padding-left: 10px; }
-  .mailing-container .join-btn {
-    height: 50px;
-    width: 115px;
+    background-color: #FAFAFA;
+    text-align: center;
+    margin-top: 15px; }
+    .mailing-container .join-us {
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px;
+      margin-top: 75px; }
+    .mailing-container .deal {
+      font-weight: 300;
+      letter-spacing: 1px; }
+    .mailing-container .input-group {
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto; }
+    .mailing-container .email {
+      height: 50px;
+      width: 450px;
+      color: #020202;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding-left: 10px; }
+    .mailing-container .join-btn {
+      height: 50px;
+      width: 115px;
+      background-color: #F63654;
+      color: #FDF9FD;
+      font-size: 17px;
+      letter-spacing: 2px;
+      margin-left: 5px;
+      border: none; }
+    .mailing-container .join-btn:hover {
+      background-color: #F85C75; }
+  #mapContainer {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px; }
+    #mapContainer .find-title {
+      margin-bottom: 50px; }
+      #mapContainer .find-title .find-us {
+        font-size: 26px;
+        font-family: 'Rubik', sans-serif;
+        letter-spacing: 2px; }
+    #mapContainer #map {
+      width: 100%;
+      height: 400px;
+      display: inline-block;
+      background-color: #CCC; }
+    #mapContainer .location {
+      height: auto;
+      display: inline-block;
+      vertical-align: top; }
+    #mapContainer .finding-details {
+      color: #F63654;
+      font-size: 24px;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px; }
+    #mapContainer .finding-details:nth-child(n+2) {
+      margin-top: 50px; }
+    #mapContainer .number {
+      margin-bottom: 50px; }
+    #mapContainer .days {
+      font-weight: 500; }
+    #mapContainer .location-details {
+      font-size: 16px;
+      font-weight: 300; }
+  .catering-container {
+    width: 100%;
+    height: 55px;
     background-color: #F63654;
     color: #FDF9FD;
-    font-size: 17px;
-    letter-spacing: 2px;
-    margin-left: 5px;
-    border: none; }
-  .mailing-container .join-btn:hover {
-    background-color: #F85C75; }
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 1px;
+    padding-top: 15px;
+    text-align: center; }
+  .footer {
+    height: auto;
+    border-top: 1px solid #ded9d9;
+    margin-bottom: 20px; }
+    .footer .footer-row {
+      margin-top: 20px; }
+    .footer .footer-logo {
+      font-family: 'Rubik', sans-serif;
+      color: #1D1D1D;
+      font-size: 28px;
+      font-weight: 500; }
+    .footer .kookoo-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block; }
+    .footer .logo {
+      display: inline-block; }
+    .footer .social {
+      text-align: left; }
+    .footer .social-title,
+    .footer .contact {
+      margin-top: 30px; }
+    .footer .follow-us {
+      font-family: 'Rubik', sans-serif;
+      font-size: 16px;
+      color: #1D1D1D; }
+    .footer .social-icons {
+      font-size: 16px;
+      text-decoration: none;
+      color: #1D1D1D;
+      margin-right: 20px; }
+    .footer .social-icons:hover {
+      border-radius: 28px;
+      color: #F63654; } }
 
-#mapContainer {
-  text-align: center;
-  margin-top: 75px;
-  margin-bottom: 75px; }
-  #mapContainer .find-title {
+@media (min-width: 668px) {
+  .nav-container {
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+    .nav-container .nav {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 15px; }
+    .nav-container .nav-links,
+    .nav-container .nav-logo {
+      color: #020202;
+      text-decoration: none; }
+    .nav-container .nav-links {
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin-top: 32px;
+      display: inline-block; }
+    .nav-container .nav-links:hover {
+      color: #F63654; }
+    .nav-container .header-logo {
+      font-family: 'Rubik', sans-serif;
+      color: #F63654;
+      font-size: 28px;
+      margin-top: 15px; }
+    .nav-container .kookoo-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block; }
+    .nav-container .nav-logo {
+      color: #F63654;
+      font-weight: 500;
+      display: inline-block; }
+  .fold-container {
+    background-color: #FAFAFA;
+    height: 600px;
+    width: 100%;
+    text-align: center; }
+    .fold-container .hook {
+      font-family: Rubik, sans-serif;
+      font-size: 90px;
+      font-weight: 300;
+      margin-top: 75px; }
+    .fold-container .hook-thick {
+      font-weight: 500;
+      color: #F63654; }
+    .fold-container #scroll {
+      font-size: 36px;
+      margin-top: 155px; }
+    .fold-container #scroll:hover {
+      color: #ded9d9;
+      cursor: pointer; }
+  #content-container {
+    width: 100%;
+    margin-top: 30px; }
+    #content-container .content-box {
+      max-width: 550px;
+      height: 300px;
+      background-color: #F63654;
+      margin-bottom: 20px;
+      margin-right: auto;
+      margin-left: auto; }
+  #aboutContainer {
+    width: 100%;
+    margin-top: 40px;
     margin-bottom: 50px; }
-    #mapContainer .find-title .find-us {
+    #aboutContainer .about {
+      text-align: center; }
+    #aboutContainer .about-us {
       font-size: 36px;
       font-family: 'Rubik', sans-serif;
       letter-spacing: 2px; }
-  #mapContainer #map {
+    #aboutContainer .story {
+      text-align: left; }
+    #aboutContainer .our-story {
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 30px; }
+  #menuContainer {
     width: 100%;
-    height: 400px;
-    display: inline-block;
-    background-color: #CCC; }
-  #mapContainer .location {
     height: auto;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left !important; }
-  #mapContainer .finding-details {
-    color: #F63654;
-    font-size: 24px;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 1px; }
-  #mapContainer .finding-details:nth-child(n+2) {
+    background-color: #FAFAFA;
+    text-align: center;
     margin-top: 50px; }
-  #mapContainer .number {
+    #menuContainer .menu {
+      font-size: 36px;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px;
+      margin-top: 75px; }
+    #menuContainer .menu-details {
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 30px;
+      text-align: left; }
+    #menuContainer .phone {
+      color: #F63654;
+      font-weight: 600; }
+    #menuContainer .menu-btn {
+      background-color: transparent;
+      color: #F63654;
+      width: 100px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-color: #F63654;
+      border-width: 2px;
+      margin-top: 40px;
+      margin-bottom: 75px; }
+    #menuContainer .menu-btn:hover {
+      background-color: #F63654;
+      color: #FDF9FD; }
+  .mailing-container {
+    width: 100%;
+    height: 300px;
+    background-color: #FAFAFA;
+    text-align: center;
+    margin-top: 15px; }
+    .mailing-container .join-us {
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px;
+      margin-top: 75px; }
+    .mailing-container .deal {
+      font-weight: 300;
+      letter-spacing: 1px; }
+    .mailing-container .input-group {
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto; }
+    .mailing-container .email {
+      height: 50px;
+      width: 450px;
+      color: #020202;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding-left: 10px; }
+    .mailing-container .join-btn {
+      height: 50px;
+      width: 115px;
+      background-color: #F63654;
+      color: #FDF9FD;
+      font-size: 17px;
+      letter-spacing: 2px;
+      margin-left: 5px;
+      border: none; }
+    .mailing-container .join-btn:hover {
+      background-color: #F85C75; }
+  #mapContainer {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px; }
+    #mapContainer .find-title {
+      margin-bottom: 50px; }
+      #mapContainer .find-title .find-us {
+        font-size: 36px;
+        font-family: 'Rubik', sans-serif;
+        letter-spacing: 2px; }
+    #mapContainer #map {
+      width: 100%;
+      height: 400px;
+      display: inline-block;
+      background-color: #CCC; }
+    #mapContainer .location {
+      height: auto;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left !important; }
+    #mapContainer .finding-details {
+      color: #F63654;
+      font-size: 24px;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px; }
+    #mapContainer .finding-details:nth-child(n+2) {
+      margin-top: 50px; }
+    #mapContainer .number {
+      margin-bottom: 50px; }
+    #mapContainer .days {
+      font-weight: 500;
+      text-align: left; }
+    #mapContainer .sunday {
+      text-align: left; }
+    #mapContainer .location-details {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 300; }
+  .footer {
+    height: auto;
+    border-top: 1px solid #ded9d9;
     margin-bottom: 50px; }
-  #mapContainer .days {
-    font-weight: 500;
-    text-align: left; }
-  #mapContainer .sunday {
-    text-align: left; }
-  #mapContainer .location-details {
-    text-align: left;
-    font-size: 16px;
-    font-weight: 300; }
-
-.catering-container {
-  width: 100%;
-  height: 55px;
-  background-color: #F63654;
-  color: #FDF9FD;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin-top: 1px;
-  padding-top: 15px;
-  text-align: center; }
-
-.footer {
-  height: auto;
-  border-top: 1px solid #ded9d9;
-  margin-bottom: 20px; }
-  .footer .footer-row {
-    margin-top: 20px; }
-  .footer .footer-logo {
-    font-family: 'Rubik', sans-serif;
-    color: #1D1D1D;
-    font-size: 28px;
-    font-weight: 500; }
-  .footer .kookoo-logo {
-    height: 50px;
-    width: auto;
-    display: inline-block; }
-  .footer .logo {
-    display: inline-block; }
+    .footer .footer-row {
+      margin-top: 20px; }
+    .footer .footer-logo {
+      font-family: 'Rubik', sans-serif;
+      color: #1D1D1D;
+      font-size: 28px;
+      font-weight: 500; }
+    .footer .kookoo-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block; }
+    .footer .logo {
+      display: inline-block; }
+    .footer .social {
+      text-align: left; }
+    .footer .follow-us {
+      font-family: 'Rubik', sans-serif;
+      font-size: 16px;
+      color: #1D1D1D; }
+    .footer .social-icons {
+      font-size: 16px;
+      text-decoration: none;
+      color: #1D1D1D;
+      margin-right: 20px; }
+    .footer .social-icons:hover {
+      border-radius: 28px;
+      color: #F63654; } }
