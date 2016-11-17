@@ -7,18 +7,8 @@ $footBlack: #1D1D1D;
 $white:     #FDF9FD;
 $gray:      #ded9d9;
 $lightGray: #FAFAFA;
-$darkGray:  #8b8b8b;
-// $blue:      #51C5E5;
-// $twitBlue:  #55ACEE;
-// $twitHov:   #7CC0F4;
-// $fbBlue:    #3B5998;
-// $fbHov:     #5772AC;
-// $instaG:    #6DC993;
-// $instaHov:  #9BE1B7;
-// $yelpRed:   #C41200;
-// $yelpHov:   #F5250F;
-
-// Gradients
+$darkGray:  #9e9e9e;
+$grey:      #afafaf;
 
 //-- FONTS
 // Size
@@ -39,11 +29,6 @@ $normal: 400;
 $chubby: 500;
 $fat:    700;
 
-// Spacing
-$one:     1px;
-$linkGap: 2px;
-$gap:     3px;
-
 //-- MARGINS
 $five:    5px;
 $ten:     10px;
@@ -62,14 +47,10 @@ $hookMar: 155px;
   }
 }
 
-//-- PADDING
-$navPad: 150px;
-
 *:focus {
   outline-width: thin;
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  // background-color: $lightGray;
 }

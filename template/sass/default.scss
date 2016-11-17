@@ -290,13 +290,13 @@
 
     .footer-logo {
       font-family: 'Rubik', sans-serif;
-      color: $footBlack;
-      font-size: 28px;
+      color: $darkGray;
+      font-size: 20px;
       font-weight: 500;
     }
 
-    .kookoo-logo {
-      height: 50px;
+    .foot-logo {
+      height: 40px;
       width: auto;
       display: inline-block;
     }
@@ -312,14 +312,18 @@
     .follow-us {
       font-family: 'Rubik', sans-serif;
       font-size: 16px;
-      color: $footBlack;
+      color: $darkGray;
     }
 
     .social-icons {
       font-size: 16px;
       text-decoration: none;
-      color: $footBlack;
-      margin-right: 20px;      
+      color: $darkGray;
+      margin-right: 20px;
+    }
+
+    .email {
+      color: $darkGray;
     }
 
     .social-icons:hover {
