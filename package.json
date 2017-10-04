@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/JoshuaHwang/kookoo#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "smooth-scroll": "^12.1.5"
   },
   "devDependencies": {
     "gulp-jade": "^1.1.0",

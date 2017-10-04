@@ -1,454 +1,350 @@
-*:focus {
-  outline-width: thin; }
+a:link {
+  text-decoration: none; }
 
-html, body {
-  font-family: 'Roboto', sans-serif; }
+.navbar {
+  transition: ease-in-out .2s;
+  background-color: #d72a45; }
 
-@media (max-width: 668px) {
-  .nav-container {
-    width: 100%;
-    position: relative;
-    z-index: 1; }
-    .nav-container .nav {
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 15px; }
-    .nav-container .nav-links,
-    .nav-container .nav-logo {
-      color: #020202;
-      text-decoration: none; }
-    .nav-container .nav-links {
-      font-size: 13px;
-      font-weight: 300;
-      letter-spacing: 2px;
-      margin-top: 32px;
-      display: none; }
-    .nav-container .nav-links:hover {
-      color: #F63654; }
-    .nav-container .header-logo {
-      font-family: 'Rubik', sans-serif;
-      color: #F63654;
-      font-size: 24px;
-      margin-top: 15px; }
-    .nav-container .kookoo-logo {
-      height: 45px;
-      width: auto;
-      display: inline-block; }
-    .nav-container .nav-logo {
-      color: #F63654;
-      font-weight: 500;
-      display: inline-block; }
-  .fold-container {
-    background-color: #FAFAFA;
-    height: 600px;
-    width: 100%;
-    text-align: center; }
-    .fold-container .hook {
-      font-family: Rubik, sans-serif;
-      font-size: 50px;
-      font-weight: 300;
-      margin-top: 75px; }
-    .fold-container .hook-thick {
-      font-weight: 500;
-      color: #F63654; }
-    .fold-container #scroll {
-      font-size: 36px;
-      margin-top: 155px; }
-    .fold-container #scroll:hover {
-      color: #ded9d9;
-      cursor: pointer; }
-  #content-container {
-    width: 100%;
-    margin-top: 30px; }
-    #content-container .content-box {
-      max-width: 550px;
-      height: 300px;
-      background-color: #F63654;
-      margin-bottom: 20px;
-      margin-right: auto;
-      margin-left: auto; }
-  #aboutContainer {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 50px; }
-    #aboutContainer .about {
-      text-align: center; }
-    #aboutContainer .about-us {
-      font-size: 26px;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px; }
-    #aboutContainer .story {
-      text-align: left; }
-    #aboutContainer .our-story {
-      font-size: 16px;
-      font-weight: 300;
-      margin-top: 30px; }
-  #menuContainer {
-    width: 100%;
-    height: auto;
-    background-color: #FAFAFA;
-    text-align: center;
-    margin-top: 50px; }
-    #menuContainer .menu {
-      font-size: 26px;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-      margin-top: 75px; }
-    #menuContainer .menu-details {
-      font-size: 16px;
-      font-weight: 300;
-      margin-top: 30px;
-      text-align: left; }
-    #menuContainer .phone {
-      color: #F63654;
-      font-weight: 600; }
-    #menuContainer .menu-btn {
-      background-color: transparent;
-      color: #F63654;
-      width: 100px;
-      font-family: 'Rubik', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      border-color: #F63654;
-      border-width: 2px;
-      margin-top: 40px;
-      margin-bottom: 75px; }
-    #menuContainer .menu-btn:hover {
-      background-color: #F63654;
-      color: #FDF9FD; }
-  .mailing-container {
-    width: 100%;
-    height: 300px;
-    background-color: #FAFAFA;
-    text-align: center;
-    margin-top: 15px; }
-    .mailing-container .join-us {
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 1px;
-      margin-top: 75px; }
-    .mailing-container .deal {
-      font-weight: 300;
-      letter-spacing: 1px; }
-    .mailing-container .input-group {
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto; }
-    .mailing-container .email {
-      height: 50px;
-      width: 450px;
-      color: #020202;
-      font-weight: 300;
-      letter-spacing: 1px;
-      padding-left: 10px; }
-    .mailing-container .join-btn {
-      height: 50px;
-      width: 115px;
-      background-color: #F63654;
-      color: #FDF9FD;
-      font-size: 17px;
-      letter-spacing: 2px;
-      margin-left: 5px;
-      border: none; }
-    .mailing-container .join-btn:hover {
-      background-color: #F85C75; }
-  #mapContainer {
-    text-align: center;
-    margin-top: 75px;
-    margin-bottom: 75px; }
-    #mapContainer .find-title {
-      margin-bottom: 50px; }
-      #mapContainer .find-title .find-us {
-        font-size: 26px;
-        font-family: 'Rubik', sans-serif;
-        letter-spacing: 2px; }
-    #mapContainer #map {
-      width: 100%;
-      height: 400px;
-      display: inline-block;
-      background-color: #CCC; }
-    #mapContainer .location {
-      height: auto;
-      display: inline-block;
-      vertical-align: top; }
-    #mapContainer .finding-details {
-      color: #F63654;
-      font-size: 20px;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 1px; }
-    #mapContainer .finding-details:nth-child(n+2) {
-      margin-top: 50px; }
-    #mapContainer .number {
-      margin-bottom: 50px; }
-    #mapContainer .days {
-      font-weight: 500; }
-    #mapContainer .location-details {
-      font-size: 16px;
-      font-weight: 300; }
-  .catering-container {
-    width: 100%;
-    height: 55px;
-    background-color: #F63654;
+.logo {
+  vertical-align: top; }
+
+.fixed-logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #020202; }
+
+.fixed-logo:hover {
+  color: #020202; }
+
+.fixed-grill {
+  color: #FDF9FD; }
+
+.nav-links {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #FDF9FD;
+  text-align: right;
+  transition: ease-in-out .3s; }
+
+.nav-links:hover {
+  color: #f7f7f7; }
+
+.hook-container {
+  background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url("../images/interior.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%; }
+
+.hook-div {
+  text-align: center;
+  margin-top: 45px; }
+  .hook-div .hook {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #f63251; }
+  .hook-div .grill {
+    color: #FDF9FD; }
+  .hook-div .fusionyaki {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 5px;
     color: #FDF9FD;
-    font-size: 18px;
+    margin-bottom: 50px; }
+  .hook-div .neon {
+    font-family: "Dosis", sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 1px;
-    padding-top: 15px;
-    text-align: center; }
-  .footer {
-    height: auto;
-    border-top: 1px solid #ded9d9;
-    margin-bottom: 20px; }
-    .footer .footer-row {
-      margin-top: 20px; }
-    .footer .footer-logo {
-      font-family: 'Rubik', sans-serif;
-      color: #838383;
-      font-size: 20px;
-      font-weight: 500; }
-    .footer .foot-logo {
-      height: 40px;
-      width: auto;
-      display: inline-block; }
-    .footer .logo {
-      display: inline-block; }
-    .footer .social {
-      text-align: left; }
-    .footer .social-title,
-    .footer .contact {
-      margin-top: 30px; }
-    .footer .follow-us {
-      font-family: 'Rubik', sans-serif;
-      font-size: 16px;
-      color: #838383; }
-    .footer .social-icons {
-      font-size: 16px;
-      text-decoration: none;
-      color: #9e9e9e;
-      margin-right: 20px; }
-    .footer .social-icons:hover {
-      border-radius: 28px;
-      color: #F63654; } }
-
-@media (min-width: 668px) {
-  .nav-container {
-    width: 100%;
-    position: relative;
-    z-index: 1; }
-    .nav-container .nav {
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 15px; }
-    .nav-container .nav-links,
-    .nav-container .nav-logo {
-      color: #020202;
-      text-decoration: none; }
-    .nav-container .nav-links {
-      font-size: 13px;
-      font-weight: 300;
-      letter-spacing: 2px;
-      margin-top: 32px;
-      display: inline-block; }
-    .nav-container .nav-links:hover {
-      color: #F63654; }
-    .nav-container .header-logo {
-      font-family: 'Rubik', sans-serif;
-      color: #F63654;
-      font-size: 28px;
-      margin-top: 15px; }
-    .nav-container .kookoo-logo {
-      height: 50px;
-      width: auto;
-      display: inline-block; }
-    .nav-container .nav-logo {
-      color: #F63654;
-      font-weight: 500;
-      display: inline-block; }
-  .fold-container {
-    background-color: #FAFAFA;
-    height: 600px;
-    width: 100%;
-    text-align: center; }
-    .fold-container .hook {
-      font-family: Rubik, sans-serif;
-      font-size: 90px;
-      font-weight: 300;
-      margin-top: 75px; }
-    .fold-container .hook-thick {
-      font-weight: 500;
-      color: #F63654; }
-    .fold-container #scroll {
-      font-size: 36px;
-      margin-top: 155px; }
-    .fold-container #scroll:hover {
-      color: #ded9d9;
-      cursor: pointer; }
-  #content-container {
-    width: 100%;
-    margin-top: 30px; }
-    #content-container .content-box {
-      max-width: 550px;
-      height: 300px;
-      background-color: #F63654;
-      margin-bottom: 20px;
-      margin-right: auto;
-      margin-left: auto; }
-  #aboutContainer {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 50px; }
-    #aboutContainer .about {
-      text-align: center; }
-    #aboutContainer .about-us {
-      font-size: 36px;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px; }
-    #aboutContainer .story {
-      text-align: left; }
-    #aboutContainer .our-story {
-      font-size: 16px;
-      font-weight: 300;
-      margin-top: 30px; }
-  #menuContainer {
-    width: 100%;
-    height: auto;
-    background-color: #FAFAFA;
-    text-align: center;
-    margin-top: 50px; }
-    #menuContainer .menu {
-      font-size: 36px;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-      margin-top: 75px; }
-    #menuContainer .menu-details {
-      font-size: 16px;
-      font-weight: 300;
-      margin-top: 30px;
-      text-align: left; }
-    #menuContainer .phone {
-      color: #F63654;
-      font-weight: 600; }
-    #menuContainer .menu-btn {
-      background-color: transparent;
-      color: #F63654;
-      width: 100px;
-      font-family: 'Rubik', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      border-color: #F63654;
-      border-width: 2px;
-      margin-top: 40px;
-      margin-bottom: 75px; }
-    #menuContainer .menu-btn:hover {
-      background-color: #F63654;
-      color: #FDF9FD; }
-  .mailing-container {
-    width: 100%;
-    height: 300px;
-    background-color: #FAFAFA;
-    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #f63251, 0 0 80px #f63251, 0 0 90px #f63251, 0 0 100px #f63251, 0 0 150px #f63251; }
+  .hook-div .neon-hook {
+    font-family: "Dosis", sans-serif;
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #f63251, 0 0 80px #f63251, 0 0 90px #f63251, 0 0 100px #f63251, 0 0 150px #f63251;
     margin-top: 15px; }
-    .mailing-container .join-us {
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 1px;
-      margin-top: 75px; }
-    .mailing-container .deal {
-      font-weight: 300;
-      letter-spacing: 1px; }
-    .mailing-container .input-group {
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto; }
-    .mailing-container .email {
-      height: 50px;
-      width: 450px;
-      color: #020202;
-      font-weight: 300;
-      letter-spacing: 1px;
-      padding-left: 10px; }
-    .mailing-container .join-btn {
-      height: 50px;
-      width: 115px;
-      background-color: #F63654;
-      color: #FDF9FD;
-      font-size: 17px;
-      letter-spacing: 2px;
-      margin-left: 5px;
-      border: none; }
-    .mailing-container .join-btn:hover {
-      background-color: #F85C75; }
-  #mapContainer {
-    text-align: center;
-    margin-top: 75px;
-    margin-bottom: 75px; }
-    #mapContainer .find-title {
-      margin-bottom: 50px; }
-      #mapContainer .find-title .find-us {
-        font-size: 36px;
-        font-family: 'Rubik', sans-serif;
-        letter-spacing: 2px; }
-    #mapContainer #map {
-      width: 100%;
-      height: 400px;
-      display: inline-block;
-      background-color: #CCC; }
-    #mapContainer .location {
-      height: auto;
-      display: inline-block;
-      vertical-align: top;
-      text-align: left !important; }
-    #mapContainer .finding-details {
-      color: #F63654;
-      font-size: 24px;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 1px; }
-    #mapContainer .finding-details:nth-child(n+2) {
-      margin-top: 50px; }
-    #mapContainer .number {
-      margin-bottom: 50px; }
-    #mapContainer .days {
-      font-weight: 500;
-      text-align: left; }
-    #mapContainer .sunday {
-      text-align: left; }
-    #mapContainer .location-details {
-      text-align: left;
-      font-size: 16px;
-      font-weight: 300; }
-  .footer {
-    height: auto;
-    border-top: 1px solid #ded9d9;
+
+.hooklinks-div {
+  text-align: center;
+  margin-top: 50px; }
+  .hooklinks-div .links {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FDF9FD;
+    transition: ease-in-out .2s; }
+  .hooklinks-div .links:hover {
+    color: #f63251; }
+
+#about-container {
+  margin-top: 100px; }
+  #about-container .image-container {
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+  #about-container .image-container::before {
+    position: absolute;
+    z-index: -1;
+    background-color: #f2f1f1;
+    content: ''; }
+  #about-container .owners-image {
+    z-index: 100; }
+  #about-container #about {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px; }
+  #about-container .about {
+    font-family: "Source Sans Pro", sans-serif; }
+
+#gallery-container {
+  text-align: center;
+  background-color: #f63251; }
+  #gallery-container .gallery {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    letter-spacing: 20px; }
+  #gallery-container .carousel-img {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto; }
+  #gallery-container .carousel-control {
+    color: #020202; }
+
+#menu-container .menu-col {
+  text-align: center;
+  z-index: 1000; }
+
+#menu-container .menu-label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #f63251; }
+
+#menu-container .menu-description {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 75px; }
+
+#menu-container .btn {
+  background-color: #f63251;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  color: #FDF9FD;
+  transition: ease-in-out .2s; }
+
+#menu-container .btn:hover {
+  background-color: #d72a45;
+  color: #FDF9FD;
+  cursor: pointer; }
+
+#contact-container {
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+  z-index: -100; }
+  #contact-container .contact-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 50px; }
+  #contact-container .contact-label {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700; }
+  #contact-container .contact-description {
+    font-weight: 400; }
+  #contact-container #map {
+    height: 450px;
+    width: 100%;
+    margin-top: 50px; }
+  #contact-container .social-label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 50px; }
+  #contact-container .social-links {
+    font-size: 22px;
+    color: #020202 !important;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all .2s ease-in-out; }
+  #contact-container .social-links:hover {
+    color: #f63251 !important; }
+  #contact-container .catering {
+    margin-top: 50px; }
+
+.creator-container {
+  width: 100%;
+  background-color: #020202;
+  text-align: center; }
+  .creator-container .creator {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FDF9FD;
+    margin-top: 15px; }
+  .creator-container .josh {
+    color: #9e9e9e;
+    transition: all .2s ease-in-out; }
+  .creator-container .josh:hover {
+    color: #f63251; }
+
+@media (max-width: 628px) {
+  .navbar {
+    display: none; }
+  .logo {
+    width: 55px;
+    height: 55px; }
+  .hook-container {
+    height: 500px; }
+  .hook-logo {
+    height: 50px;
+    width: 50px; }
+  .hook {
+    font-size: 32px;
+    margin-bottom: -7px; }
+  .fusionyaki {
+    font-size: 18px; }
+  .neon {
+    font-size: 24px;
+    margin-bottom: 100px; }
+  .links {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 5px; }
+  .image-container::before {
+    top: -10%;
+    left: 14%;
+    width: 85%;
+    height: 100%; }
+  .owners-image {
+    width: 85%; }
+  #about-container {
+    text-align: center; }
+  #about {
+    font-size: 34px;
+    margin-top: 25px; }
+  .about {
+    font-size: 18px; }
+  #gallery-container {
+    margin-top: 50px; }
+  .gallery {
+    font-size: 42px;
+    margin-top: -34px; }
+  .carousel-img {
+    width: 70%; }
+  #menu-container {
+    margin-top: 50px;
     margin-bottom: 50px; }
-    .footer .footer-row {
-      margin-top: 20px; }
-    .footer .footer-logo {
-      font-family: 'Rubik', sans-serif;
-      color: #838383;
-      font-size: 20px;
-      font-weight: 500; }
-    .footer .foot-logo {
-      height: 40px;
-      width: auto;
-      display: inline-block; }
-    .footer .logo {
-      display: inline-block; }
-    .footer .social {
-      text-align: left; }
-    .footer .follow-us {
-      font-family: 'Rubik', sans-serif;
-      font-size: 16px;
-      color: #838383; }
-    .footer .social-icons {
-      font-size: 16px;
-      text-decoration: none;
-      color: #9e9e9e;
-      margin-right: 20px; }
-    .footer .email {
-      color: #9e9e9e; }
-    .footer .social-icons:hover {
-      border-radius: 28px;
-      color: #F63654; } }
+  .menu-label {
+    font-size: 34px; }
+  .menu-description {
+    font-size: 18px; }
+  .btn {
+    font-size: 18px; }
+  .contact-title {
+    font-size: 34px; } }
+
+@media (min-width: 629px) {
+  .hook-logo {
+    height: 85px;
+    width: 85px; }
+  .hook-container {
+    height: 650px; }
+  .hook {
+    font-size: 74px;
+    margin-bottom: -25px; }
+  .fusionyaki {
+    font-size: 24px; }
+  .neon {
+    font-size: 32px;
+    margin-bottom: 90px; }
+  .links {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 50px; }
+  .image-container::before {
+    top: -10%;
+    left: 8%;
+    width: 100%;
+    height: 100%; }
+  .owners-image {
+    width: 100%; }
+  #about {
+    font-size: 32px; }
+  .about {
+    font-size: 18px; }
+  #gallery-container {
+    margin-top: 100px; }
+  .gallery {
+    font-size: 75px;
+    margin-top: -58px; }
+  .carousel-img {
+    width: 75%; }
+  .menu-label {
+    font-size: 32px;
+    margin-top: 50px; }
+  .menu-description {
+    font-size: 18px; }
+  .btn {
+    font-size: 18px;
+    margin-bottom: 50px; }
+  .contact-title {
+    font-size: 32px; } }
+
+@media (min-width: 821px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+    vertical-align: top; }
+  .hook-container {
+    height: 650px; }
+  .hook-logo {
+    height: 100px;
+    width: 100px; }
+  .hook {
+    font-size: 86px;
+    margin-bottom: -25px; }
+  .fusionyaki {
+    font-size: 28px; }
+  .neon {
+    font-size: 36px;
+    margin-bottom: 90px; }
+  .links {
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 60px; }
+  .image-container::before {
+    top: -10%;
+    left: 8%;
+    width: 100%;
+    height: 100%; }
+  .owners-image {
+    width: 100%; }
+  #about {
+    font-size: 42px; }
+  .about {
+    font-size: 24px; }
+  #gallery-container {
+    margin-top: 100px; }
+  .gallery {
+    font-size: 90px;
+    margin-top: -70px; }
+  .carousel-img {
+    width: 55%; }
+  #menu-container {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .menu-label {
+    font-size: 42px; }
+  .menu-description {
+    font-size: 24px; }
+  .btn {
+    font-size: 24px; }
+  .contact-title {
+    font-size: 42px; }
+  #map {
+    height: 350px;
+    margin-bottom: 50px; } }

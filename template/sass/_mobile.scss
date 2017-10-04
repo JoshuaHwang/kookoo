@@ -51,7 +51,7 @@
 
   //-- HOME CSS
   .fold-container {
-    background-color: $lightGray;
+    // background-color: $lightGray;
     height: 600px;
     width: 100%;
     text-align: center;
@@ -284,7 +284,8 @@
   //-- FOOTER CSS
   .footer {
     height: auto;
-    border-top: 1px solid $gray;
+    width: 100%;
+    background-color: $black;
     margin-bottom: 20px;
 
     .footer-row {

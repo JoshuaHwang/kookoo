@@ -1,56 +1,18 @@
 //-- COLORS
-// Solids
-$red:       #F63654;
-$pink:      #F85C75;
+$orange:    #F94722;
+$red:       #f63251;
+$darkRed:   #d72a45;
+$pink:      #fa9dac;
+$yellow:    #EAD94C;
 $black:     #020202;
 $footBlack: #1D1D1D;
 $white:     #FDF9FD;
-$gray:      #ded9d9;
-$lightGray: #FAFAFA;
+$gray:      #f2f1f1;
+$lightGray: #f7f7f7;
 $darkGray:  #9e9e9e;
 $grey:      #838383;
 
-//-- FONTS
-// Size
-$hookSize:  60px;
-$bigHeader: 46px;
-$header:    36px;
-$logo:      30px;
-$smallLogo: 24px;
-$connected: 18px;
-$label:     17px;
-$paragraph: 16px;
-$navLink:   13px;
-
-// Weight
-$skinny: 100;
-$thin:   300;
-$normal: 400;
-$chubby: 500;
-$fat:    700;
-
-//-- MARGINS
-$five:    5px;
-$ten:     10px;
-$fifteen: 15px;
-$logoMar: 25px;
-$thirty:  30px;
-$forty:   40px;
-$fifty:   50px;
-$content: 75px;
-$hookMar: 155px;
-
-@mixin auto {
-  margin: {
-    right: auto;
-    left: auto;
-  }
-}
-
-*:focus {
-  outline-width: thin;
-}
-
-html, body {
-  font-family: 'Roboto', sans-serif;
-}
+//-- FONT
+$source: 'Source Sans Pro', sans-serif;
+$dosis: 'Dosis', sans-serif;
+$jose: 'Josefin Sans', sans-serif;

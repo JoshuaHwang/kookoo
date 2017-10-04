@@ -1,334 +1,562 @@
 @import 'base';
-@import 'mobile';
 
-@media(min-width: 668px) {
-  .nav-container {
-    width: 100%;
-    position: relative;
-    z-index: 1;
+a:link {
+  text-decoration: none;
+}
 
-    .nav {
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 15px;
-    }
+.navbar {
+  // visibility: hidden;
+  transition: ease-in-out .2s;
+  background-color: #d72a45;
+}
 
-    .nav-links,
-    .nav-logo {
-      color: $black;
-      text-decoration: none;
-    }
+.logo {
+  vertical-align: top;
+}
 
-    .nav-links {
-      font-size: $navLink;
-      font-weight: $thin;
-      letter-spacing: 2px;
-      margin-top: 32px;
-      display: inline-block;
-    }
+.fixed-logo {
+  font-family: $jose;
+  font-weight: 600;
+  font-size: 20px;
+  color: $black;
+}
 
-    .nav-links:hover {
-      color: $red;
-    }
+.fixed-logo:hover {
+  color: $black;
+}
 
-    .header-logo {
-      font-family: 'Rubik', sans-serif;
-      color: $red;
-      font-size: 28px;
-      margin-top: 15px;
-    }
+.fixed-grill {
+  color: $white;
+}
 
-    .kookoo-logo {
-      height: 50px;
-      width: auto;
-      display: inline-block;
-    }
+.nav-links {
+  font-family: $jose;
+  font-size: 16px;
+  margin-left: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $white;
+  text-align: right;
+  transition: ease-in-out .3s;
+}
 
-    .nav-logo {
-      color: $red;
-      font-weight: 500;
-      display: inline-block;
-    }
+.nav-links:hover {
+  color: $lightGray;
+}
+
+.hook-container {
+  background: linear-gradient(
+                     rgba(20,20,20, .6),
+                     rgba(20,20,20, .6)),
+                     url('../images/interior.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.hook-div {
+  text-align: center;
+  margin-top: 45px;
+
+  .hook {
+    font-family: $jose;
+    font-weight: 700;
+    color: $red;
   }
 
-  //-- HOME CSS
-  .fold-container {
-    background-color: $lightGray;
-    height: 600px;
-    width: 100%;
-    text-align: center;
-
-    .hook {
-      font-family: Rubik, sans-serif;
-      font-size: 90px;
-      font-weight: 300;
-      margin-top: 75px;
-    }
-
-    .hook-thick {
-      font-weight: 500;
-      color: $red;
-    }
-
-    #scroll {
-      font-size: $header;
-      margin-top: $hookMar;
-    }
-
-    #scroll:hover {
-      color: $gray;
-      cursor: pointer;
-    }
+  .grill {
+    color: $white;
   }
 
-  #content-container {
-    width: 100%;
-    margin-top: $thirty;
-
-    .content-box {
-      max-width: 550px;
-      height: 300px;
-      background-color: $red;
-      margin-bottom: 20px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-
-  #aboutContainer {
-    width: 100%;
-    margin-top: $forty;
-    margin-bottom: $fifty;
-
-    .about {
-      text-align: center;
-    }
-
-    .about-us {
-      font-size: $header;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-    }
-
-    .story {
-      text-align: left;
-    }
-
-    .our-story {
-      font-size: $paragraph;
-      font-weight: $thin;
-      margin-top: $thirty;
-    }
-  }
-
-  #menuContainer {
-    width: 100%;
-    height: auto;
-    background-color: $lightGray;
-    text-align: center;
-    margin-top: $fifty;
-
-    .menu {
-      font-size: $header;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-      margin-top: 75px;
-    }
-
-    .menu-details {
-      font-size: $paragraph;
-      font-weight: $thin;
-      margin-top: $thirty;
-      text-align: left;
-    }
-
-    .phone {
-      color: $red;
-      font-weight: 600;
-    }
-
-    .menu-btn {
-      background-color: transparent;
-      color: $red;
-      width: 100px;
-      font-family: 'Rubik', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      border-color: $red;
-      border-width: 2px;
-      margin-top: 40px;
-      margin-bottom: 75px;
-    }
-
-    .menu-btn:hover {
-      background-color: $red;
-      color: $white;
-    }
-  }
-
-  .mailing-container {
-    width: 100%;
-    height: 300px;
-    background-color: $lightGray;
-    text-align: center;
-    margin-top: $fifteen;
-
-    .join-us {
-      // font-weight: $fat;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 1px;
-      margin-top: $content;
-    }
-
-    .deal {
-      font-weight: $thin;
-      letter-spacing: 1px;
-    }
-
-    .input-group {
-      margin-top: $forty;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .email {
-      height: 50px;
-      width: 450px;
-      color: $black;
-      font-weight: $thin;
-      letter-spacing: 1px;
-      padding-left: $ten;
-    }
-
-    .join-btn {
-      height: 50px;
-      width: 115px;
-      background-color: $red;
-      color: $white;
-      font-size: $label;
-      letter-spacing: 2px;
-      margin-left: $five;
-      border: none;
-    }
-
-    .join-btn:hover {
-      background-color: $pink;
-    }
-  }
-
-  #mapContainer {
-    text-align: center;
-    margin-top: $content;
-    margin-bottom: $content;
-
-    .find-title {
-      margin-bottom: $fifty;
-
-      .find-us {
-        font-size: $header;
-        font-family: 'Rubik', sans-serif;
-        letter-spacing: 2px;
-      }
-    }
-
-    #map {
-      width: 100%;
-      height: 400px;
-      display: inline-block;
-      background-color: #CCC;
-    }
-
-    .location {
-      height: auto;
-      display: inline-block;
-      vertical-align: top;
-      text-align: left !important;
-    }
-
-    .finding-details {
-      color: $red;
-      font-size: $smallLogo;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 1px;
-    }
-
-    .finding-details:nth-child(n+2) {
-      margin-top: $fifty;
-    }
-
-    .number {
-      margin-bottom: $fifty;
-    }
-
-    .days {
-      font-weight: $chubby;
-      text-align: left;
-    }
-
-    .sunday {
-      text-align: left;
-    }
-
-    .location-details {
-      text-align: left;
-      font-size: $paragraph;
-      font-weight: $thin;
-    }
-  }
-
-  //-- FOOTER CSS
-  .footer {
-    height: auto;
-    border-top: 1px solid $gray;
+  .fusionyaki {
+    font-family: $jose;
+    letter-spacing: 5px;
+    color: $white;
     margin-bottom: 50px;
+  }
 
-    .footer-row {
-      margin-top: 20px;
-    }
+  .neon {
+    font-family: $dosis;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #f63251,
+      0 0 80px #f63251,
+      0 0 90px #f63251,
+      0 0 100px #f63251,
+      0 0 150px #f63251;
+  }
 
-    .footer-logo {
-      font-family: 'Rubik', sans-serif;
-      color: $grey;
-      font-size: 20px;
-      font-weight: 500;
-    }
+  .neon-hook {
+    font-family: $dosis;
+    font-size: 34px;
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #f63251,
+      0 0 80px #f63251,
+      0 0 90px #f63251,
+      0 0 100px #f63251,
+      0 0 150px #f63251;
+    margin-top: 15px;
+  }
+}
 
-    .foot-logo {
-      height: 40px;
-      width: auto;
-      display: inline-block;
-    }
+.hooklinks-div {
+  text-align: center;
+  margin-top: 50px;
 
-    .logo {
-      display: inline-block;
-    }
+  .links {
+    font-family: $jose;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $white;
+    transition: ease-in-out .2s;
+  }
 
-    .social {
-      text-align: left;
-    }
+  .links:hover {
+    color: $red;
+  }
+}
 
-    .follow-us {
-      font-family: 'Rubik', sans-serif;
-      font-size: 16px;
-      color: $grey;
-    }
+#about-container {
+  margin-top: 100px;
 
-    .social-icons {
-      font-size: 16px;
-      text-decoration: none;
-      color: $darkGray;
-      margin-right: 20px;
-    }
+  .image-container {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
 
-    .email {
-      color: $darkGray;
-    }
+  .image-container::before {
+    position: absolute;
+    z-index: -1;
+    background-color: $gray;
+    content: '';
+  }
 
-    .social-icons:hover {
-      border-radius: 28px;
-      color: $red;
-    }
+  .owners-image {
+    z-index: 100;
+  }
+
+  #about {
+    font-family: $source;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .about {
+    font-family: $source;
+  }
+}
+
+#gallery-container {
+  text-align: center;
+  background-color: $red;
+
+  .gallery {
+    font-family: $source;
+    font-weight: 700;
+    letter-spacing: 20px;
+  }
+
+  .carousel-img {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-control {
+    color: $black;
+  }
+}
+
+#menu-container {
+  .menu-col {
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .menu-label {
+    font-family: $source;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $red;
+  }
+
+  .menu-description {
+    font-family: $source;
+    margin-bottom: 75px;
+  }
+
+  .btn {
+    background-color: $red;
+    font-family: $source;
+    font-weight: 600;
+    color: $white;
+    transition: ease-in-out .2s;
+  }
+
+  .btn:hover {
+    background-color: $darkRed;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+#contact-container {
+  width: 100%;
+  background-color: $lightGray;
+  text-align: center;
+  z-index: -100;
+
+  .contact-title {
+    font-family: $source;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 50px;
+  }
+
+  .contact-label {
+    font-family: $source;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .contact-description {
+    font-weight: 400;
+  }
+
+  #map {
+    height: 450px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .social-label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+
+  .social-links {
+    font-size: 22px;
+    color: $black !important;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all .2s ease-in-out;
+  }
+
+  .social-links:hover {
+    color: $red !important;
+  }
+
+  .catering {
+    margin-top: 50px;
+  }
+}
+
+.creator-container {
+  width: 100%;
+  background-color: $black;
+  text-align: center;
+
+  .creator {
+    font-family: $source;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $white;
+    margin-top: 15px;
+  }
+
+  .josh {
+    color: $darkGray;
+    transition: all .2s ease-in-out;
+  }
+
+  .josh:hover {
+    color: $red;
+  }
+}
+
+@media (max-width: 628px) {
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .hook-container {
+    height: 500px;
+  }
+
+  .hook-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hook {
+    font-size: 32px;
+    margin-bottom: -7px;
+  }
+
+  .fusionyaki {
+    font-size: 18px;
+  }
+
+  .neon {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+
+  .links {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .image-container::before {
+    top: -10%;
+    left: 14%;
+    width: 85%;
+    height: 100%;
+  }
+
+  .owners-image {
+    width: 85%;
+  }
+
+  #about-container {
+    text-align: center;
+  }
+
+  #about {
+    font-size: 34px;
+    margin-top: 25px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+
+  #gallery-container {
+    margin-top: 50px;
+  }
+
+  .gallery {
+    font-size: 42px;
+    margin-top: -34px;
+  }
+
+  .carousel-img {
+    width: 70%;
+  }
+
+  #menu-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .menu-label {
+    font-size: 34px;
+  }
+
+  .menu-description {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .contact-title {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 629px) {
+  .hook-logo {
+    height: 85px;
+    width: 85px;
+  }
+
+  .hook-container {
+    height: 650px;
+  }
+
+  .hook {
+    font-size: 74px;
+    margin-bottom: -25px;
+  }
+
+  .fusionyaki {
+    font-size: 24px;
+  }
+
+  .neon {
+    font-size: 32px;
+    margin-bottom: 90px;
+  }
+
+  .links {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 50px;
+  }
+
+  .image-container::before {
+    top: -10%;
+    left: 8%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .owners-image {
+    width: 100%;
+  }
+
+  #about {
+    font-size: 32px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+
+  #gallery-container {
+    margin-top: 100px;
+  }
+
+  .gallery {
+    font-size: 75px;
+    margin-top: -58px;
+  }
+
+  .carousel-img {
+    width: 75%;
+  }
+
+  .menu-label {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+
+  .menu-description {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 821px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+  }
+
+  .hook-container {
+    height: 650px;
+  }
+
+  .hook-logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .hook {
+    font-size: 86px;
+    margin-bottom: -25px;
+  }
+
+  .fusionyaki {
+    font-size: 28px;
+  }
+
+  .neon {
+    font-size: 36px;
+    margin-bottom: 90px;
+  }
+
+  .links {
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+
+  .image-container::before {
+    top: -10%;
+    left: 8%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .owners-image {
+    width: 100%;
+  }
+
+  #about {
+    font-size: 42px;
+  }
+
+  .about {
+    font-size: 24px;
+  }
+
+  #gallery-container {
+    margin-top: 100px;
+  }
+
+  .gallery {
+    font-size: 90px;
+    margin-top: -70px;
+  }
+
+  .carousel-img {
+    width: 55%;
+  }
+
+  #menu-container {
+    margin-top: 50px;
+    margin-bottom: 50px
+  }
+
+  .menu-label {
+    font-size: 42px;
+  }
+
+  .menu-description {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 24px;
+  }
+
+  .contact-title {
+    font-size: 42px;
+  }
+
+  #map {
+    height: 350px;
+    margin-bottom: 50px;
   }
 }
